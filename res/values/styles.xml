@@ -1,0 +1,185 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppBaseTheme" parent="android:Theme.NoTitleBar">
+    </style>
+
+    <!-- 默认基本的样式 -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="ViewTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:background">#00FFFFFF</item>
+    </style>
+
+    <!--home_tabbar-->
+    <style name="home_tabbar_text" parent="android:Widget.TextView">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">30dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!--home_leftbar-->
+    <style name="home_leftbar_text" parent="android:Widget.TextView">
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="home_leftbar_img" parent="android:Widget.TextView">
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--注册-->
+    <style name="register_item_text" parent="android:Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--注册-->
+    <style name="register_item_edit_text" parent="register_item_text">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--home-->
+    <style name="Theme.Navigationdrawersi" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="home_fragment_reward_item_text" parent="android:Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/gray_dack</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="home_fragment_reward_item_btn" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="home_fragment_search_search_item" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="task_tabbar_sel" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">@color/background_color</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/btn_task_tab_sel</item>
+    </style>
+
+    <style name="task_tabbar_unsel" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/btn_task_tab_unsel</item>
+    </style>
+
+    <style name="my_task_detail_item_btn" parent="android:Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="common_action_sheet_dialog_style" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/common_actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/common_actionsheet_dialog_out</item>
+    </style>
+
+    <style name="common_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="home_fragment_search_filter_text" parent="android:Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="home_fragment_search_filter_text_check" parent="home_fragment_search_filter_text">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:drawableRight">@drawable/icon_home_fragment_search_filer_check</item>
+    </style>
+
+    drawableRight
+</resources>

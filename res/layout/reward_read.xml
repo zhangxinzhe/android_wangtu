@@ -1,0 +1,198 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/reward_read_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_fragment_reward_item_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬赏主题"
+            style="@style/home_fragment_reward_item_text"
+            />
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设计一个银行年会主..."
+            android:layout_marginRight="25dp"
+            style="@style/home_fragment_reward_item_text"
+            android:layout_marginLeft="@dimen/home_fragment_reward_item_margin_left_100"
+            />
+        <ImageView
+            android:id="@+id/titleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_down"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="12dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/home_fragment_reward_item_background">
+
+        <TextView
+            style="@style/home_fragment_reward_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属分类" />
+
+        <TextView
+            style="@style/home_fragment_reward_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_fragment_reward_item_margin_left_100"
+            android:text="平面设计" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_fragment_reward_item_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作地点"
+            style="@style/home_fragment_reward_item_text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="象山港路64号"
+            style="@style/home_fragment_reward_item_text"
+            android:layout_marginLeft="@dimen/home_fragment_reward_item_margin_left_100"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_position"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reward_read_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/home_fragment_reward_item_background"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬赏描述"
+            style="@style/home_fragment_reward_item_text"
+            />
+        <TextView
+            android:id="@+id/contentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="2017年底银行年会主..."
+            style="@style/home_fragment_reward_item_text"
+            android:layout_marginLeft="@dimen/home_fragment_reward_item_margin_left_100"
+            />
+        <ImageView
+            android:id="@+id/contentImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_arrow_down"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="12dp"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+    <net.wangtu.android.common.view.HorizontalListView
+        xmlns:zerobook="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@null"
+        zerobook:dividerWidth="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray_v_light"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/home_fragment_reward_item_background">
+
+        <TextView
+            style="@style/home_fragment_reward_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="当前赏金：" />
+
+        <TextView
+            style="@style/home_fragment_reward_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_fragment_reward_item_margin_left_100"
+            android:textColor="@color/red"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="150.00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp">
+
+        <TextView
+            style="@style/home_fragment_reward_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:text="期望违约金：" />
+
+        <TextView
+            style="@style/home_fragment_reward_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_fragment_reward_item_margin_left_100"
+            android:textColor="@color/red"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="150.00" />
+    </RelativeLayout>
+
+    <net.wangtu.android.view.RewardReadView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gray_v_light"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+</merge>

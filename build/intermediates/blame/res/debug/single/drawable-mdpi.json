@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\loading.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-mdpi\\loading.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\icon_alipay.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-mdpi\\icon_alipay.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\arrow.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-mdpi\\arrow.png"
+    }
+]

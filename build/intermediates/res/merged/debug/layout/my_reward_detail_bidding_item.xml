@@ -1,0 +1,75 @@
+<net.wangtu.android.view.MyRewardDetailBiddingItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:visibility="visible">
+    <ImageView
+        android:id="@+id/item_radio"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_radio"
+        android:scaleType="center"
+        android:paddingRight="14dp"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/reward_image"
+        />
+
+    <TextView
+        android:id="@+id/item_designer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设计师Lv1"
+        android:layout_marginLeft="80dp"
+        android:textSize="12sp"
+        android:textColor="@color/gray_dack"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_expect_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="期望赏金：200.00"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/item_designer"
+        android:textSize="13sp"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="违约金：&#160;&#160;&#160;&#160;0.00"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/item_expect_reward"
+        android:textSize="13sp"
+        android:textColor="@color/yellow" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="最近一次接单：5天前"
+        android:layout_alignParentRight="true"
+        android:textSize="13sp"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:text="想了解更多>"
+        android:gravity="bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="13sp"
+        android:textColor="@color/red" />
+
+
+</net.wangtu.android.view.MyRewardDetailBiddingItemView>

@@ -1,0 +1,97 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.3.3'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion Integer.parseInt(System.properties['compileSdkVersion'] ?: '22')
+    buildToolsVersion System.properties['buildToolsVersion'] ?: '21.0.2'
+    defaultConfig {
+        applicationId project.properties['applicationId']
+        minSdkVersion 14
+        targetSdkVersion Integer.parseInt(System.properties['targetSdkVersion'] ?: '19')
+        versionCode project.properties['versionCode'].toInteger()
+        versionName project.properties['versionName']
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            jniLibs.srcDirs = ['jniLibs','libs']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+        
+        instrumentTest.setRoot('tests')
+        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+/*
+    //签名
+    signingConfigs {
+        release {
+            storeFile file(project.properties['storeFile'])
+            storePassword project.properties['storePassword']
+            keyAlias project.properties['keyAlias']
+            keyPassword project.properties['storePassword']
+        }
+    }
+
+    //混淆
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            runProguard true
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            proguardFile 'proguard-project.txt'
+        }
+    }
+
+    productFlavors {
+        std {
+            sourceSets["std"].resources.srcDirs =  ['src']
+        }
+        tst {
+            sourceSets["tst"].resources.srcDirs =  ['src']
+        }
+    }
+
+    applicationVariants.all { variant ->
+        def file = variant.outputs[0].outputFile
+        def releaseTime = new Date().format("yyyyMMddHHmm", TimeZone.getTimeZone("GMT+8"))
+        if(file.name.indexOf('release') > -1 && file.name.indexOf('unaligned') == -1){
+            println '>>>>>>>>>>>>>>>>>>>>>>' + file.name
+            if(file.name.indexOf('-std-') > -1){
+                variant.outputs[0].outputFile = new File('.\\build\\', file.name.replace("-std-release.apk", "-release-" + defaultConfig.versionName + "-" + releaseTime + ".apk"))
+            }
+        }else if(file.name.indexOf('debug') > -1 && file.name.indexOf('unaligned') == -1){
+            println '>>>>>>>>>>>>>>>>>>>>>>' + file.name
+            if(file.name.indexOf('-tst-') > -1){
+                variant.outputs[0].outputFile = new File('.\\build\\', file.name.replace("-tst-debug.apk", "-debug-" + defaultConfig.versionName + "-" + releaseTime + ".apk"))
+            }
+        }
+    }*/
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.1.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}

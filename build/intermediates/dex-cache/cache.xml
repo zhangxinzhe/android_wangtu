@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e8db000948e58e4ef6b7a1a54e92e7040e7037d5">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\2\libammsdk_c6e1f6a8a74040a0fe2fb9997b0c084f0ab9d641\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\xutils-3.5.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c70d3d4cb2d0b16c435c716fa169cb506929269b">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\2\xutils-3.5.0_9be26c30838650c5b985fff3dff567e3be96a2f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\android_studio\android_wangtu\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0f61572fd4ad8428c9ae42a21c0e1424472093fd">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_30b35ffcb38a5b98916cc07921e4de3e2179004f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\alipaySdk-20160825.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="08cfc3ced256c0e40853f35882c6bd23a191b416">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySdk-20160825_4b7045afd4f521f006188e7ca1f92210c57cdbda\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\android_studio\android_wangtu\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_340d2fbf0d086abd83ad9117841150327dcbcf1e\classes.dex" />
+    </item>
+
+</items>

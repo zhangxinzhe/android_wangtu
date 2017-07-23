@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/icon_reward_pic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/home_fragment_search_item_left_margin"
+        android:layout_marginRight="@dimen/home_fragment_search_item_right_margin"
+        android:text="主题：设计一个银行年会主题背景\n设计一个银行年会主题背景"
+        android:textColor="@color/gray"
+        android:textSize="10sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/home_fragment_search_item_left_margin"
+        android:layout_marginRight="@dimen/home_fragment_search_item_right_margin"
+        android:text="悬赏金额：150+300"
+        android:textColor="@android:color/holo_orange_light"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分类：平面设计"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布时间：5分钟之前"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/home_fragment_search_item_right_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="了解详情>"
+        android:gravity="center_horizontal|right"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+</RelativeLayout>

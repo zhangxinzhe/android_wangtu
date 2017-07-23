@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:minHeight="64dp"
+    android:background="@color/white"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="2dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="你没理解LZ的意思，他想要获得是上一层的view，就好比你建了个layout，然后addChild了个button，然后怎么从button这里获得他的父viewgroup（view貌似不能addChild吧），即layout的view对象"
+        android:textColor="@color/gray_dack"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2011-7-12 17:38"
+        android:textColor="@color/gray"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp" />
+</RelativeLayout>

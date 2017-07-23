@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_container"
+        android:background="@android:color/transparent"
+        layout="@layout/header_normal" />
+
+    <ListView
+        android:id="@+id/lv_album"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:divider="#dcdcdc"
+        android:dividerHeight="1dp"
+        android:drawSelectorOnTop="true"
+        android:listSelector="@drawable/btn_common_camera_album" />
+
+</LinearLayout>

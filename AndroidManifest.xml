@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.wangtu.android"
+    android:versionCode="2017070220"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="22" />
+
+	<!-- 权限 -->
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.BLUETOOTH" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    
+    <application
+		android:name="net.wangtu.android.WangTuApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+		android:theme="@style/AppTheme"
+		android:label="@string/app_name"
+		>
+        <activity
+            android:name="net.wangtu.android.MainActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+		<!--登录页-->
+		<activity
+			android:name="net.wangtu.android.activity.LoginActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<!--注册页-->
+		<activity
+			android:name="net.wangtu.android.activity.RegisterActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<!--中心页-->
+		<activity
+			android:name="net.wangtu.android.activity.HomeActivity"
+			android:theme="@style/Theme.Navigationdrawersi"
+			android:screenOrientation="portrait"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:launchMode="singleTask" >
+		</activity>
+		<!--悬赏详情页-->
+		<activity
+			android:name="net.wangtu.android.activity.RewardDetailActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<activity
+			android:name="net.wangtu.android.activity.MyRewardDetailBiddingActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<activity
+			android:name="net.wangtu.android.activity.MyTaskDetailBiddingActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<activity
+			android:name="net.wangtu.android.activity.MyTaskDetailPayActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<activity
+			android:name="net.wangtu.android.activity.MyTaskDetailProgressActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<!--任务页-->
+		<activity
+			android:name="net.wangtu.android.activity.MyTaskActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<!--选择照片页-->
+		<activity
+			android:name="net.wangtu.android.activity.common.PhotoActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<activity
+			android:name="net.wangtu.android.activity.common.AlbumActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<activity
+			android:name="net.wangtu.android.activity.common.ClipImageActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+		<activity
+			android:name="net.wangtu.android.activity.common.AvatarActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<activity
+			android:name="net.wangtu.android.activity.RewardPayActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<activity
+			android:name="net.wangtu.android.activity.LiquidatedDamagesPayActivity"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<activity
+			android:name="net.wangtu.android.activity.MyRewardDetailPayActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<activity
+			android:name="net.wangtu.android.activity.MyRewardDetailPublishActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<activity
+			android:name="net.wangtu.android.activity.MyRewardDetailResultActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<activity
+			android:name="net.wangtu.android.activity.SettingActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<activity
+			android:name="net.wangtu.android.activity.MyNoticeActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
+
+		<activity
+			android:name=".wxapi.WXPayEntryActivity"
+			android:screenOrientation="portrait"
+			android:launchMode="singleTop"
+			android:label="@string/app_name" >
+		</activity>
+
+		<!-- alipay_S -->
+		<activity
+			android:name="com.alipay.sdk.app.H5PayActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:exported="false"
+			android:screenOrientation="behind" >
+		</activity>
+		<activity
+			android:name="com.alipay.sdk.auth.AuthActivity"
+			android:configChanges="orientation|keyboardHidden|navigation"
+			android:exported="false"
+			android:screenOrientation="behind" >
+		</activity>
+		<!-- alipay_E -->
+    </application>
+
+</manifest>

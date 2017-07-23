@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_vv_light">
+    <include
+        android:id="@+id/header_container"
+        android:background="@android:color/transparent"
+        layout="@layout/header_normal" />
+    <net.wangtu.android.common.view.refresh.RefreshView
+        android:id="@+id/refreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/gray_v_light"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent" />
+    </net.wangtu.android.common.view.refresh.RefreshView>
+</RelativeLayout >
