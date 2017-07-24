@@ -10,9 +10,13 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TabHost;
 
+import com.igexin.sdk.PushManager;
+
 import net.wangtu.android.R;
 import net.wangtu.android.activity.base.BaseFragmentActivity;
 import net.wangtu.android.activity.common.AvatarActivity;
+import net.wangtu.android.common.compoment.getui.GeTuiIntentService;
+import net.wangtu.android.common.compoment.getui.GeTuiService;
 import net.wangtu.android.fragment.HomeFragment;
 import net.wangtu.android.fragment.SearchFragment;
 import net.wangtu.android.view.RewardCreateView;
@@ -46,6 +50,11 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
         initTabUI();
 
         initEvent();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     /**
