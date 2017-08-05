@@ -23,6 +23,7 @@ import android.content.Context;
 import net.wangtu.android.common.util.CookieUtil;
 import net.wangtu.android.common.util.JsonUtil;
 import net.wangtu.android.common.util.NetworkUtil;
+import net.wangtu.android.common.util.UrlUtil;
 import net.wangtu.android.common.util.ValidateUtil;
 import net.wangtu.android.common.util.http.HttpUtilException;
 import net.wangtu.android.common.util.http.SSLContextUtil;
@@ -61,7 +62,7 @@ public class WangTuHttpUtil {
 			Iterator<String> keys = cookieJson.keys();
 			while (keys.hasNext()) {
 				String key = keys.next();
-	            CookieUtil.setCookie(key, cookieJson.optString(key), uri, context);
+	            CookieUtil.setCookie(key, cookieJson.optString(key), UrlUtil.getDomain(uri), context);
 	        }
 		}
 		return value;
@@ -135,7 +136,7 @@ public class WangTuHttpUtil {
 			
 			//返回cookie
 	        if(canReturnCookies){
-	        	Map<String, String> returnCookies = new HashMap<String, String>();
+				JSONObject returnCookies = new JSONObject();
 	        	params.put("returnCookies", returnCookies);
 	        	// 取到所用的Cookie
 	        	Map<String, List<String>> headers = conn.getHeaderFields();
@@ -189,4 +190,8 @@ public class WangTuHttpUtil {
 		
 		return result;
 	}
+
+//	public void postForm(String url,JSONObject params,){
+//
+//	}
 }

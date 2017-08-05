@@ -20,6 +20,10 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\common_actionsheet_view.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\user_info_star.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\user_info_star.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_camera_photo_item.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\common_camera_photo_item.xml"
     },
@@ -60,12 +64,12 @@
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\my_notice.xml",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\my_notice.xml"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_loading.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\common_loading.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\home_fragment_search_filter.xml",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\home_fragment_search_filter.xml"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\my_notice.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\my_notice.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\my_task_item.xml",
@@ -112,6 +116,10 @@
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\notification_template_media.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\user_info.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\user_info.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\main.xml"
     },
@@ -124,12 +132,12 @@
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\notification_template_custom_big.xml"
-    },
-    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\notification_template_custom_big.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_error_view.xml",
@@ -140,6 +148,10 @@
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\user_info_comment.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\user_info_comment.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
@@ -148,12 +160,12 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\my_task_my_task_item.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\my_reward_detail_bidding_item.xml",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\my_reward_detail_bidding_item.xml"
-    },
-    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\reward_edit.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\reward_edit.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\my_reward_detail_bidding_item.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\my_reward_detail_bidding_item.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
@@ -176,12 +188,16 @@
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\getui_notification.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\getui_notification.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\reward_pay.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\reward_pay.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\home_fragment_search_item.xml",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\home_fragment_search_item.xml"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_select_popup_window.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\common_select_popup_window.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\register.xml",
@@ -252,6 +268,10 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\home_tabbar.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\user_info_comment_item.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\user_info_comment_item.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\header_normal.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\header_normal.xml"
     },
@@ -266,6 +286,10 @@
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\my_task.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\my_task.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\home_fragment_item.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\home_fragment_item.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\home_header.xml",
@@ -300,8 +324,16 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\avatar.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\apk_progress_view.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\apk_progress_view.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\liquidated_damages_pay.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\liquidated_damages_pay.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\header_left.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\header_left.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",

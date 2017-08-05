@@ -1,20 +1,27 @@
 package net.wangtu.android.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
+import net.wangtu.android.Constants;
 import net.wangtu.android.R;
 import net.wangtu.android.activity.base.BaseActivity;
+import net.wangtu.android.common.util.ThreadUtils;
+import net.wangtu.android.common.util.ValidateUtil;
 import net.wangtu.android.common.view.dialog.AlertView;
+import net.wangtu.android.common.view.dialog.BoxView;
 import net.wangtu.android.common.view.dialog.ConfirmView;
+import net.wangtu.android.util.ToastUtil;
+import net.wangtu.android.util.WangTuHttpUtil;
+import net.wangtu.android.util.WangTuUtil;
 import net.wangtu.android.view.MyRewardDetailBiddingItemView;
+import net.wangtu.android.view.RewardReadView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -26,8 +33,12 @@ import org.json.JSONObject;
 public class MyRewardDetailBiddingActivity extends BaseActivity{
     private ListView designerListView;
     private DesignerListViewAdapter adapter;
-    private JSONArray datas;
+    private RewardReadView rewardReadView;
+    private JSONArray biddingList;
+    private JSONObject dataJson;
     private MyRewardDetailBiddingItemView checkedItem;
+    private String rewardId;
+    private String biddingId;
 
 
     @Override
@@ -36,7 +47,19 @@ public class MyRewardDetailBiddingActivity extends BaseActivity{
         setContentView(R.layout.my_reward_detail_bidding);
         initHeader("详情",true);
 
+        Bundle bundle = getIntent().getExtras();
+        rewardId = bundle.getString("rewardId");
+        initUI();
+        initEvent();
+        initData();
+    }
+
+    private void initUI(){
+        rewardReadView = (RewardReadView)findViewById(R.id.reward_read_view);
         designerListView = (ListView)findViewById(R.id.designerListView);
+    }
+
+    private void initEvent(){
         designerListView.setAdapter(adapter = new DesignerListViewAdapter());
         designerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -46,15 +69,53 @@ public class MyRewardDetailBiddingActivity extends BaseActivity{
                 }
                 checkedItem = (MyRewardDetailBiddingItemView)view;
                 checkedItem.checked(true);
+                biddingId = biddingList.optJSONObject(position).optString("id");
             }
         });
+    }
 
-        datas = new JSONArray();
+    private void initData(){
+        biddingList = new JSONArray();
+        ToastUtil.startLoading(this);
+        ThreadUtils.schedule(new Runnable() {
+            @Override
+            public void run() {
+                String url = WangTuUtil.getPage(Constants.API_REWARD_DETAIL) + "?rewardId=" + rewardId;
+                try {
+                    dataJson = WangTuHttpUtil.getJson(url,MyRewardDetailBiddingActivity.this);
+                    post(new Runnable() {
+                        @Override
+                        public void run() {
+                            ToastUtil.stopLoading(MyRewardDetailBiddingActivity.this);
+                            JSONObject reward = dataJson.optJSONObject("reward");
+                            rewardReadView.initData(reward);
+                            if(reward != null && !reward.isNull("biddingList")){
+                                biddingList = reward.optJSONArray("biddingList");
+                                adapter.notifyDataSetChanged();
+                                setListViewHeightBasedOnChildren(designerListView);
+                            }
+                        }
+                    });
 
-        getDataFromServer();
+                } catch (Exception e) {
+                    post(new Runnable() {
+                        @Override
+                        public void run() {
+                            ToastUtil.stopLoading(MyRewardDetailBiddingActivity.this);
+                            showError();
+                        }
+                    });
+                }
+            }
+        });
     }
 
     public void chooseOnClick(View view){
+        if(ValidateUtil.isBlank(biddingId)){
+            ToastUtil.error(this,"请选择接单人！");
+            return;
+        }
+
         final ConfirmView confirmView = new ConfirmView(this);
         confirmView.setTitleMsg("选择提示！");
         confirmView.setContentMsg("您确定要选择他，完成此任务？");
@@ -70,47 +131,62 @@ public class MyRewardDetailBiddingActivity extends BaseActivity{
     }
 
     private void makeSureChoose(){
-        final AlertView alertView = new AlertView(this);
-        alertView.setTitleMsg("操作成功！");
-        alertView.setContentMsg("您已选择成功，请耐心等待对方确认？");
-        alertView.setOkBtnName("确定");
-        alertView.setOkBtnListener(new View.OnClickListener(){
+        ToastUtil.startLoading(this);
+        ThreadUtils.schedule(new Runnable() {
             @Override
-            public void onClick(View v){
-                alertView.dismiss();
-                finish();
+            public void run() {
+                String url = WangTuUtil.getPage(Constants.API_CHOOSE_BIDDING) + "?biddingId=" + biddingId;
+                try {
+                    dataJson = WangTuHttpUtil.getJson(url,MyRewardDetailBiddingActivity.this);
+                    post(new Runnable() {
+                        @Override
+                        public void run() {
+                            if("success".equals(dataJson.optString("msg"))){
+                                ToastUtil.alert(MyRewardDetailBiddingActivity.this, "操作成功！", new ToastUtil.DialogOnClickListener() {
+                                    @Override
+                                    public void onClick(BoxView dialog) {
+                                        dialog.dismiss();
+                                        finish();
+                                    }
+                                });
+                            }else{
+                                ToastUtil.error(getApplicationContext(),dataJson.optString("msg"));
+                            }
+                        }
+                    });
+
+                } catch (Exception e) {
+                    post(new Runnable() {
+                        @Override
+                        public void run() {
+                            ToastUtil.stopLoading(MyRewardDetailBiddingActivity.this);
+                            ToastUtil.error(MyRewardDetailBiddingActivity.this,"请求失败");
+                        }
+                    });
+                }
             }
         });
-        alertView.show();
     }
 
     public void waitOnClick(View view){
         finish();
     }
 
-    private void getDataFromServer(){
-        for (int i =0;i< 10;i++){
-            datas.put(i);
-        }
-        adapter.notifyDataSetChanged();
-        setListViewHeightBasedOnChildren(designerListView);
-    }
-
     private class DesignerListViewAdapter extends BaseAdapter {
         @Override
         public int getCount() {
-            if (datas == null || datas.length() <= 0) {
+            if (biddingList == null || biddingList.length() <= 0) {
                 return 0;
             }
-            return datas.length();
+            return biddingList.length();
         }
 
         @Override
         public JSONObject getItem(int position) {
-            if (datas == null || datas.length() <= 0) {
+            if (biddingList == null || biddingList.length() <= 0) {
                 return null;
             }
-            return datas.optJSONObject(position);
+            return biddingList.optJSONObject(position);
         }
 
         @Override
@@ -120,12 +196,15 @@ public class MyRewardDetailBiddingActivity extends BaseActivity{
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
+            MyRewardDetailBiddingItemView itemView = null;
             if (convertView == null) {
                 convertView = View.inflate(MyRewardDetailBiddingActivity.this, R.layout.my_reward_detail_bidding_item, null);
+                itemView = (MyRewardDetailBiddingItemView)convertView;
+                itemView.initUI();
             } else {
-                //itemView = (CourseListViewItemEvent) convertView;
+                itemView = (MyRewardDetailBiddingItemView) convertView;
             }
-
+            itemView.initData(biddingList.optJSONObject(position),position);
             return convertView;
         }
     }

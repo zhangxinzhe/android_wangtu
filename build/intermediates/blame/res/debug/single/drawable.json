@@ -76,6 +76,10 @@
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\common_corner_blue.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable\\common_corner_blue.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\common_actionsheet_middle_selector.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable\\common_actionsheet_middle_selector.xml"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\common_corner_blue_light.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable\\common_corner_blue_light.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\common_corner.xml",
@@ -132,6 +140,10 @@
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\common_underline_dotted_gray.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable\\common_underline_dotted_gray.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
@@ -150,6 +162,14 @@
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\style_confirm_container.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable\\style_confirm_container.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\common_border_user_info_text.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable\\common_border_user_info_text.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_login_normal.xml",

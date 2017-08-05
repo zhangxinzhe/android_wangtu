@@ -15,6 +15,11 @@ import android.os.Handler;
 import android.os.Looper;
 import android.webkit.WebView;
 
+import net.wangtu.android.Constants;
+import net.wangtu.android.common.util.DataUtil;
+import net.wangtu.android.common.util.Util;
+import net.wangtu.android.component.VersionManager;
+
 /**
  * 获取app上下文
  * @author Administrator
@@ -81,32 +86,31 @@ public abstract class ContextUtil extends Application {
         return false; 
     }
 
-    public  static  Context  getContext(){
+    public  static  ContextUtil  getContext(){
         return instance;
     }
-
-    /**
-     * 消息通知用到的activity
-     * @return
-     */
-    public abstract Class<?> getNotifyActivity();
-    
-    /**
-     * 默认推送地址
-     * @return
-     */
-    public abstract String getDefaultNotifyUrl();
-    
-    /**
-     * 消息已接收
-     * @param msgId
-     * @return
-     */
-    public abstract void hasRevievedPushMsg(String msgId);
     
     /**
      * 获取当前运行的activity
      * @return
      */
-    public abstract Activity getCurrentActivity();
+    public Activity getCurrentActivity(){
+        return null;
+    }
+
+    String appIdentification = null;
+    public String getAppIdentification(){
+        if(appIdentification == null){
+            appIdentification = Constants.APP_IDENTIFICATION + "_" + VersionManager.getLocalVersion() + "_" + VersionManager.getLocalInnerVersion();
+            appIdentification += "_0";
+
+            appIdentification += "-device_" + android.os.Build.VERSION.SDK_INT + "_" + android.os.Build.MODEL + "_" + Constants.APP_IDENTIFICATION ;
+            appIdentification += "_phone";
+        }
+        return appIdentification;
+    }
+
+    public String getConfigUrl(){
+        return WangTuUtil.getConfigUrl();
+    }
 }

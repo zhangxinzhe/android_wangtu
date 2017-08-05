@@ -4,12 +4,100 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_button_more.png"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_search_filter.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_search_filter.png"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\push_small.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\push_small.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_radio_checked.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_radio_checked.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_check.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_check.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_header.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_header.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_single_normal.9.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_single_normal.9.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_input_del.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_input_del.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_button_add.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_button_add.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_wechatpay.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_wechatpay.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_top_pressed.9.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_top_pressed.9.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_single_pressed.9.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_single_pressed.9.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_button_del.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_button_del.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_middle_normal.9.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_middle_normal.9.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_checked.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_checked.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_middle.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_middle.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\refresh_view_load.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\refresh_view_load.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_home_want.9.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_home_want.9.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\push.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\push.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_arrow_down.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_arrow_down.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_camera_no_pictures.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_camera_no_pictures.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_radio.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_radio.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_middle_pressed.9.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_middle_pressed.9.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_person2.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_person2.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_phone.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_phone.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_search_filter.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_search_filter.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_position.png",
@@ -24,28 +112,24 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon.png"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_header.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_header.png"
-    },
-    {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_single_normal.9.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_single_normal.9.png"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_right.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_right.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_arrow_right.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_arrow_right.png"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_person.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_person.png"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_reward_search.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_reward_search.png"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_input_del.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_input_del.png"
-    },
-    {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_button_add.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_button_add.png"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_star_gray.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_star_gray.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_btn_close.png",
@@ -64,32 +148,16 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_reward.png"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_single_pressed.9.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_single_pressed.9.png"
-    },
-    {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_top_pressed.9.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_top_pressed.9.png"
-    },
-    {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_wechatpay.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_wechatpay.png"
-    },
-    {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_middle_normal.9.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_middle_normal.9.png"
-    },
-    {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_button_del.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_button_del.png"
-    },
-    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_img_add.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_img_add.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_pay_radio_checked.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_pay_radio_checked.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_star_yellow.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_star_yellow.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_back.png",
@@ -108,44 +176,32 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_home_fragment_search_filer_check.png"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\refresh_view_load.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\refresh_view_load.png"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_arrow_up.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_arrow_up.png"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_user_info_left.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_user_info_left.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_search_background.9.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_search_background.9.png"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_home_want.9.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_home_want.9.png"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_arrow_up.png",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_arrow_up.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_pay_radio.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_pay_radio.png"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_arrow_down.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_arrow_down.png"
-    },
-    {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_camera_no_pictures.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_camera_no_pictures.png"
-    },
-    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_setting.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_setting.png"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_radio.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\icon_radio.png"
-    },
-    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_top_normal.9.png",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_top_normal.9.png"
-    },
-    {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\actionsheet_middle_pressed.9.png",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\drawable-xhdpi\\actionsheet_middle_pressed.9.png"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\icon_btn_open.png",

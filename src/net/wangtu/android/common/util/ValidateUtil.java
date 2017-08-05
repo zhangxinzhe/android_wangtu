@@ -1,6 +1,7 @@
 package net.wangtu.android.common.util;
 
 import java.util.List;
+import java.util.Map;
 
 import org.json.JSONArray;
 
@@ -33,6 +34,23 @@ public class ValidateUtil {
 			return true;
 		}
 		
+		return false;
+	}
+
+	/**
+	 * map是否为空
+	 * @param map
+	 * @return
+	 */
+	public static boolean isEmpty(Map<?, ?> map) {
+		if (map == null) {
+			return true;
+		}
+
+		if (map.size() <= 0) {
+			return true;
+		}
+
 		return false;
 	}
 	

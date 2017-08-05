@@ -1,95 +1,148 @@
 package net.wangtu.android.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import net.wangtu.android.Constants;
 import net.wangtu.android.R;
 import net.wangtu.android.activity.base.BaseActivity;
+import net.wangtu.android.common.util.ThreadUtils;
+import net.wangtu.android.common.util.UrlUtil;
+import net.wangtu.android.common.util.ValidateUtil;
+import net.wangtu.android.common.view.dialog.BoxView;
 import net.wangtu.android.common.view.dialog.ConfirmView;
+import net.wangtu.android.fragment.HomeFragment;
+import net.wangtu.android.util.ToastUtil;
+import net.wangtu.android.util.WangTuHttpUtil;
+import net.wangtu.android.util.WangTuUtil;
+import net.wangtu.android.view.RewardReadView;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 /**
  * Created by zhangxz on 2017/7/6.
  */
-
 public class RewardDetailActivity extends BaseActivity{
-    private TextView titleText;
-    private ImageView titleImage;
-    private TextView contentText;
-    private ImageView contentImage;
+    private EditText txtRewardExpectPrice;
+    private RewardReadView rewardReadView;
+    private String rewardId;
+    private JSONObject dataJson;
 
     @Override
     protected void toCreate(Bundle savedInstanceState) {
         super.toCreate(savedInstanceState);
         setContentView(R.layout.reward_detail);
 
-        titleText = (TextView)findViewById(R.id.titleText);
-        titleImage = (ImageView)findViewById(R.id.titleImage);
-        contentText = (TextView)findViewById(R.id.contentText);
-        contentImage = (ImageView)findViewById(R.id.contentImage);
+        Bundle bundle = getIntent().getExtras();
+        rewardId = bundle.getString("rewardId");
+        initUI();
+        initData();
+    }
 
+    private void initUI(){
+        txtRewardExpectPrice = (EditText)findViewById(R.id.reward_expect_price);
+        rewardReadView = (RewardReadView)findViewById(R.id.reward_read_view);
         initHeader("详情",true);
     }
 
-    public void titleDetailOnClick(View view){
-        String title = "设计一个银行年会主设计一个银行年会主";
-        if(titleImage.getVisibility() == View.VISIBLE){
-            titleText.setText(title);
-            titleImage.setVisibility(View.INVISIBLE);
-        }else{
-            if(title.length() > 10){
-                title = title.substring(0,10) + "...";
-            }
-            titleText.setText(title);
-            titleImage.setVisibility(View.VISIBLE);
-        }
+    private void initData(){
+        ToastUtil.startLoading(this);
+        ThreadUtils.schedule(new Runnable() {
+            @Override
+            public void run() {
+                String url = WangTuUtil.getPage(Constants.API_REWARD_DETAIL) + "?rewardId=" + rewardId;
+                try {
+                    dataJson = WangTuHttpUtil.getJson(url,RewardDetailActivity.this);
+                    post(new Runnable() {
+                        @Override
+                        public void run() {
+                            ToastUtil.stopLoading(RewardDetailActivity.this);
+                            rewardReadView.initData(dataJson.optJSONObject("reward"));
+                        }
+                    });
 
+                } catch (Exception e) {
+                    post(new Runnable() {
+                        @Override
+                        public void run() {
+                            ToastUtil.stopLoading(RewardDetailActivity.this);
+                            showError();
+                        }
+                    });
+                }
+            }
+        });
     }
 
-    public void contentDetailOnClick(View view){
-        String title = "设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主";
-        if(contentImage.getVisibility() == View.VISIBLE){
-            contentText.setText(title);
-            contentImage.setVisibility(View.INVISIBLE);
-        }else{
-            if(title.length() > 10){
-                title = title.substring(0,10) + "...";
-            }
-            contentText.setText(title);
-            contentImage.setVisibility(View.VISIBLE);
-        }
-
-    }
-
-    public void bidding(View view){
-        final ConfirmView confirmView = new ConfirmView(this);
-        confirmView.setTitleMsg("竞价申请提交成功！");
-        confirmView.setContentMsg("您可以到我的任务中查看竞价结果，继续寻找任务还是查看我的任务？");
-        confirmView.setOkBtnName("继续寻找");
+    public void biddingOnClick(View view){
+        final ConfirmView confirmView = new ConfirmView(RewardDetailActivity.this);
+        confirmView.setTitleMsg("竞价申请提示！");
+        confirmView.setContentMsg("点击继续，将提交申请？");
+        confirmView.setOkBtnName("继续");
         confirmView.setOkBtnListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 confirmView.dismiss();
-                finish();
-            }
-        });
-        confirmView.setCancelBtnName("查看我的");
-        confirmView.setCancelBtnListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                confirmView.dismiss();
-                Intent intent = new Intent(RewardDetailActivity.this,MyTaskActivity.class);
-                intent.putExtra("type","myTask");
-                startActivity(intent);
-                finish();
+                applyBidding();
             }
         });
         confirmView.show();
     }
 
-    public void cancel(View view){
+    public void applyBidding(){
+        final String expectPrice = txtRewardExpectPrice.getText().toString();
+        if(ValidateUtil.isBlank(expectPrice)){
+            ToastUtil.error(this,"请填写期望赏金金额！");
+            return;
+        }
+        ToastUtil.startLoading(this);
+        ThreadUtils.schedule(new Runnable() {
+            @Override
+            public void run() {
+                String url = WangTuUtil.getPage(Constants.API_ADD_REWARD_BIDDING) + "?rewardId=" + rewardId + "&price=" + expectPrice;
+                try {
+                    dataJson = WangTuHttpUtil.getJson(url,RewardDetailActivity.this);
+                    post(new Runnable() {
+                        @Override
+                        public void run() {
+                            stopLoading();
+                            if("success".equals(dataJson.optString("msg"))){
+                                ToastUtil.confirm(RewardDetailActivity.this,"提示", "支付完平台使用费，才能开始竞价！","支付","取消", new ToastUtil.DialogOnClickListener() {
+                                    @Override
+                                    public void onClick(BoxView dialog) {
+                                        //跳去支付平台使用费
+                                        Intent intent = new Intent(RewardDetailActivity.this,LiquidatedDamagesPayActivity.class);
+                                        intent.putExtra("rewardId",rewardId);
+                                        startActivity(intent);
+                                        finish();
+                                    }
+                                },null);
+                            }else{
+                                ToastUtil.error(RewardDetailActivity.this,dataJson.optString("msg"));
+                            }
+                        }
+                    });
+                } catch(final Exception e) {
+                    post(new Runnable() {
+                        @Override
+                        public void run() {
+                            ToastUtil.stopLoading(RewardDetailActivity.this);
+                            ToastUtil.error(RewardDetailActivity.this,e.getMessage());
+                        }
+                    });
+                }
+            }
+        });
+    }
+
+    public void cancelOnClick(View view){
         finish();
     }
 }

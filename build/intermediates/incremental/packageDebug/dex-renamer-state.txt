@@ -1,4 +1,4 @@
-#Sun Jul 23 22:43:39 CST 2017
+#Sun Aug 06 00:06:44 CST 2017
 base.0=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_340d2fbf0d086abd83ad9117841150327dcbcf1e
 renamed.1=classes2.dex
 renamed.0=classes.dex

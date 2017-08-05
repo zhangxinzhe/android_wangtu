@@ -5,7 +5,9 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import net.wangtu.android.Constants;
 import net.wangtu.android.R;
+import net.wangtu.android.util.WangTuUtil;
 
 import org.json.JSONObject;
 
@@ -14,10 +16,6 @@ import org.json.JSONObject;
  */
 
 public class MyTaskItemView extends RelativeLayout{
-    private static  String STATUS_BIDDING = "竞价中";
-    private static  String STATUS_TO_PAY = "待付平台使用费";
-    private static  String STATUS_TASK_START = "进行中";
-
     private static  String REWARD_PRICE = "悬赏金额：${price}";
 
     private JSONObject dataJson;
@@ -44,23 +42,39 @@ public class MyTaskItemView extends RelativeLayout{
     }
 
     public void initData(JSONObject dataJson,int posision){
-        itemTitle.setText("主题：设计一个银行年会主题背景设计一个银行...");
-        itemRewardRrice.setText(REWARD_PRICE.replace("${price}","150"));
-        switch(posision){
-            case 0:
-                itemStatus.setTextColor(getContext().getResources().getColor(R.color.red));
-                itemStatus.setText(STATUS_BIDDING);
-                break;
-            case 1:
-                itemStatus.setTextColor(getContext().getResources().getColor(R.color.red));
-                itemStatus.setText(STATUS_TO_PAY);
-                break;
-            default:
-                itemStatus.setTextColor(getContext().getResources().getColor(R.color.green));
-                itemStatus.setText(STATUS_TASK_START);
-                break;
+        itemTitle.setText("主题：" + dataJson.optString("title"));
+        itemRewardRrice.setText(REWARD_PRICE.replace("${price}",dataJson.optString("price")));
+        String rewardStatus = dataJson.optString("biddingStatus");
 
+
+        // 未支付竞价
+        if(Constants.Bidding_STATUS_UNPAY.equals(rewardStatus)){
+            itemStatus.setTextColor(getContext().getResources().getColor(R.color.red));
+            itemStatus.setText("待付平台使用费");
+        // 已支付，竞价中
+        }else if(Constants.Bidding_STATUS_PAY.equals(rewardStatus)){
+            itemStatus.setTextColor(getContext().getResources().getColor(R.color.red));
+            itemStatus.setText("竞价中");
+        // 竞价成功
+        }else if(Constants.Bidding_STATUS_SUCCESS.equals(rewardStatus)){
+            itemStatus.setTextColor(getContext().getResources().getColor(R.color.red));
+            itemStatus.setText("竞价成功，开始任务");
+        // 任务完成
+        }else if(Constants.Bidding_STATUS_FINISH.equals(rewardStatus)){
+            itemStatus.setTextColor(getContext().getResources().getColor(R.color.green));
+            itemStatus.setText("任务完成");
+        // 竞价失败
+        }else if(Constants.Bidding_STATUS_FAIL.equals(rewardStatus)){
+            itemStatus.setTextColor(getContext().getResources().getColor(R.color.green));
+            itemStatus.setText("竞价失败");
+        // 任务撤销
+        }else if(Constants.Bidding_USER_CANCEL.equals(rewardStatus)){
+            itemStatus.setTextColor(getContext().getResources().getColor(R.color.green));
+            itemStatus.setText("放弃竞价");
+        // 发布撤销
+        }else if(Constants.Bidding_USER_CANCEL.equals(rewardStatus)){
+            itemStatus.setTextColor(getContext().getResources().getColor(R.color.green));
+            itemStatus.setText("发布撤销");
         }
-
     }
 }

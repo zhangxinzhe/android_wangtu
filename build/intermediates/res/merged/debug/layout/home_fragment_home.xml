@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include
+        android:id="@+id/header_container"
+        android:background="@android:color/transparent"
+        layout="@layout/home_header" />
+    <RelativeLayout
+        android:layout_below="@id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/icon_search_background"
+        >
+        <TextView
+            android:id="@+id/btn_sort"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/icon_arrow_down"
+            style="@style/home_fragment_search_search_item"
+            android:gravity="right|center_vertical"
+            android:text="综合排序&#160;"
+            />
+        <TextView
+            android:id="@+id/btn_filter"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:drawableRight="@drawable/icon_search_filter"
+            style="@style/home_fragment_search_search_item"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:text="筛选&#160;"
+            />
+    </RelativeLayout>
+
+    <net.wangtu.android.common.view.refresh.RefreshView
+        android:id="@+id/refreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="128dp"
+        >
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#e6e6e6"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent" />
+    </net.wangtu.android.common.view.refresh.RefreshView>
+</RelativeLayout>

@@ -12,6 +12,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\GetuiSDK2.10.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="42fa5f206accc54f63357aef61409a9e88eccb8e">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\2\GetuiSDK2.10.2.0_29d821728a69994d542c57c5e9eb7feb99f5672a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\alipaySdk-20160825.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="08cfc3ced256c0e40853f35882c6bd23a191b416">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\pre-dexed\debug\alipaySdk-20160825_4b7045afd4f521f006188e7ca1f92210c57cdbda.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\xutils-3.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c70d3d4cb2d0b16c435c716fa169cb506929269b">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\pre-dexed\debug\xutils-3.5.0_9be26c30838650c5b985fff3dff567e3be96a2f5.jar" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\GitHub\android_studio\android_wangtu\libs\xutils-3.5.0.jar"
         jumboMode="true"
         optimize="true"
@@ -21,11 +48,47 @@
     </item>
     <item
         is-multidex="true"
+        jar="E:\GitHub\android_studio\android_wangtu\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_340d2fbf0d086abd83ad9117841150327dcbcf1e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\GetuiSDK2.10.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="42fa5f206accc54f63357aef61409a9e88eccb8e">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\pre-dexed\debug\GetuiSDK2.10.2.0_29d821728a69994d542c57c5e9eb7feb99f5672a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\glide-3.6.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\2\glide-3.6.1_e3ec420b7e0207e9eb5af0b42bcd023c8de2b0d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\libammsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e8db000948e58e4ef6b7a1a54e92e7040e7037d5">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\pre-dexed\debug\libammsdk_c6e1f6a8a74040a0fe2fb9997b0c084f0ab9d641.jar" />
+    </item>
+    <item
+        is-multidex="true"
         jar="E:\GitHub\android_studio\android_wangtu\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="0f61572fd4ad8428c9ae42a21c0e1424472093fd">
+        sha1="b74042feb278d67a756615f667593a877a947830">
         <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_30b35ffcb38a5b98916cc07921e4de3e2179004f\classes.dex" />
     </item>
     <item
@@ -38,13 +101,13 @@
         <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySdk-20160825_4b7045afd4f521f006188e7ca1f92210c57cdbda\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="E:\GitHub\android_studio\android_wangtu\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="E:\GitHub\android_studio\android_wangtu\libs\glide-3.6.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_340d2fbf0d086abd83ad9117841150327dcbcf1e\classes.dex" />
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\pre-dexed\debug\glide-3.6.1_e3ec420b7e0207e9eb5af0b42bcd023c8de2b0d1.jar" />
     </item>
 
 </items>

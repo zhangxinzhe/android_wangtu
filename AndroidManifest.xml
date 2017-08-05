@@ -66,6 +66,11 @@
 			android:screenOrientation="portrait"
 			android:label="@string/app_name" >
 		</activity>
+		<activity
+			android:name="net.wangtu.android.activity.UserInfoActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
 		<!--中心页-->
 		<activity
 			android:name="net.wangtu.android.activity.HomeActivity"
@@ -207,13 +212,13 @@
 		<!-- 配置的第三方参数属性 -->
 		<meta-data
 			android:name="PUSH_APPID"
-			android:value="你的APPID" /> <!-- 替换为第三方应用的APPID -->
+			android:value="sSJ6Li04CN93vSzlCF2Ru3" /> <!-- 替换为第三方应用的APPID -->
 		<meta-data
 			android:name="PUSH_APPKEY"
-			android:value="你的APPKEY" /> <!-- 替换为第三方应用的APPKEY -->
+			android:value="RGOU3diQRe8hbq2M6UBWW3" /> <!-- 替换为第三方应用的APPKEY -->
 		<meta-data
 			android:name="PUSH_APPSECRET"
-			android:value="你的APPSECRET" /> <!-- 替换为第三方应用的APPSECRET -->
+			android:value="LE7s2pDESa7aJuDm8wZ9b9" /> <!-- 替换为第三方应用的APPSECRET -->
 		<!-- 配置SDK核心服务 -->
 		<service
 			android:name="com.igexin.sdk.PushService"
@@ -263,7 +268,7 @@
 		</receiver>
 		<provider
 			android:name="com.igexin.download.DownloadProvider"
-			android:authorities="downloads.你的包名"
+			android:authorities="downloads.net.wangtu.android"
 			android:exported="true"
 			android:process=":pushservice" /> <!-- 替换为第三方应用的包名 -->
 		<!-- 个推SDK配置结束 -->

@@ -15,6 +15,7 @@ import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import net.wangtu.android.R;
@@ -24,6 +25,7 @@ import net.wangtu.android.common.util.Util;
 import net.wangtu.android.common.view.HorizontalListView;
 import net.wangtu.android.common.view.dialog.ActionSheet;
 import net.wangtu.android.util.HeaderUtil;
+import net.wangtu.android.util.WangTuUtil;
 import net.wangtu.android.util.album.AlbumOpt;
 import net.wangtu.android.util.album.ImageItem;
 import net.wangtu.android.util.album.XImageUtil;
@@ -32,6 +34,8 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static android.app.Activity.RESULT_OK;
 
@@ -40,11 +44,25 @@ import static android.app.Activity.RESULT_OK;
  */
 
 public class RewardReadView extends View{
+    final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy年MM月dd日");
     private JSONObject dataJson;
     private static final int imageNum = 9;// 图片个数
     private boolean inited;
 
+    private TextView txtRewardTitle;
+    private ImageView txtRewardTitleImage;
+    private TextView txtRewardCatalog;
+    private TextView txtRewardLocation;
+    private TextView txtRewardDeadline;
+    private TextView txtRewardDescription;
+    private ImageView txtRewardDescriptionImage;
+    private RelativeLayout rewardDescriptionRelative;
+    private RelativeLayout rewardTitleRelative;
     private HorizontalListView photoView;
+    private TextView txtRewardPrice;
+    private RelativeLayout rewardPhoneRelative;
+    private TextView txtRewardPhone;
+
     private RewardReadView.MyAdapter adapter;
 
     public RewardReadView(Context context) {
@@ -59,52 +77,6 @@ public class RewardReadView extends View{
         super(context, attrs, defStyle);
     }
 
-    public void initData(JSONObject dataJson){
-        this.dataJson = dataJson;
-        final View containerView = (View)getParent();
-        photoView = (HorizontalListView) containerView.findViewById(R.id.photoView);
-        final TextView titleText = (TextView)containerView.findViewById(R.id.titleText);
-        final ImageView titleImage = (ImageView)containerView.findViewById(R.id.titleImage);
-        final TextView contentText = (TextView)containerView.findViewById(R.id.contentText);
-        final ImageView contentImage = (ImageView)containerView.findViewById(R.id.contentImage);
-
-        photoView.setAdapter(adapter = new RewardReadView.MyAdapter(getContext(),null));
-        //title
-        containerView.findViewById(R.id.reward_read_title).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String title = "设计一个银行年会主设计一个银行年会主";
-                if(titleImage.getVisibility() == View.VISIBLE){
-                    titleText.setText(title);
-                    titleImage.setVisibility(View.INVISIBLE);
-                }else{
-                    if(title.length() > 10){
-                        title = title.substring(0,10) + "...";
-                    }
-                    titleText.setText(title);
-                    titleImage.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-        //detail
-        containerView.findViewById(R.id.reward_read_detail).setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String title = "设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主设计一个银行年会主";
-                if(contentImage.getVisibility() == View.VISIBLE){
-                    contentText.setText(title);
-                    contentImage.setVisibility(View.INVISIBLE);
-                }else{
-                    if(title.length() > 10){
-                        title = title.substring(0,10) + "...";
-                    }
-                    contentText.setText(title);
-                    contentImage.setVisibility(View.VISIBLE);
-                }
-            }
-        });
-    }
-
     //模拟数据后面需要删除
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
@@ -114,7 +86,72 @@ public class RewardReadView extends View{
         }
         inited = true;
 
-        initData(null);
+        initUI();
+    }
+
+    private void initUI(){
+        final View containerView = (View)getParent();
+        rewardTitleRelative =  (RelativeLayout) containerView.findViewById(R.id.reward_title_relative);
+        txtRewardTitle = (TextView) containerView.findViewById(R.id.reward_title);
+        txtRewardTitleImage = (ImageView) containerView.findViewById(R.id.reward_title_image);
+        txtRewardCatalog = (TextView) containerView.findViewById(R.id.reward_catalog);
+        txtRewardLocation = (TextView) containerView.findViewById(R.id.reward_location);
+        txtRewardDeadline = (TextView) containerView.findViewById(R.id.reward_deadline);
+        rewardDescriptionRelative =  (RelativeLayout) containerView.findViewById(R.id.reward_description_relative);
+        txtRewardDescription = (TextView) containerView.findViewById(R.id.reward_description);
+        txtRewardDescriptionImage = (ImageView) containerView.findViewById(R.id.reward_description_image);
+        txtRewardPrice = (TextView) containerView.findViewById(R.id.reward_price);
+        photoView = (HorizontalListView) containerView.findViewById(R.id.photoView);
+        rewardPhoneRelative = (RelativeLayout) containerView.findViewById(R.id.reward_phone_relative);
+        txtRewardPhone = (TextView) containerView.findViewById(R.id.reward_phone);
+    }
+
+    public void initData(final JSONObject dataJson){
+        this.dataJson = dataJson;
+        txtRewardTitle.setText(dataJson.optString("title"));
+        txtRewardCatalog.setText(dataJson.optString("cataName"));
+        txtRewardLocation.setText(dataJson.optString("location"));
+        Date deadline = new Date(dataJson.optLong("deadline"));
+        txtRewardDeadline.setText(dateFormat.format(deadline));
+        txtRewardDescription.setText(dataJson.optString("description"));
+        txtRewardPrice.setText(dataJson.optString("price"));
+        txtRewardPhone.setText(dataJson.optString("phone"));
+
+        //图片展示
+        JSONArray images = dataJson.optJSONArray("pictures");
+        if(images == null || images.length() <= 0){
+            photoView.setVisibility(View.GONE);
+        }else{
+            photoView.setVisibility(View.VISIBLE);
+            photoView.setAdapter(adapter = new RewardReadView.MyAdapter(getContext(),dataJson.optJSONArray("pictures")));
+        }
+
+        //title
+        rewardTitleRelative.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(txtRewardTitleImage.getVisibility() == View.VISIBLE){
+                    txtRewardTitle.setSingleLine(false);
+                    txtRewardTitleImage.setVisibility(View.INVISIBLE);
+                }else{
+                    txtRewardTitle.setSingleLine(true);
+                    txtRewardTitleImage.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+        //detail
+        rewardDescriptionRelative.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(txtRewardDescriptionImage.getVisibility() == View.VISIBLE){
+                    txtRewardDescription.setSingleLine(false);
+                    txtRewardDescriptionImage.setVisibility(View.INVISIBLE);
+                }else{
+                    txtRewardDescription.setSingleLine(true);
+                    txtRewardDescriptionImage.setVisibility(View.VISIBLE);
+                }
+            }
+        });
     }
 
     private class MyAdapter extends BaseAdapter {
@@ -123,10 +160,7 @@ public class RewardReadView extends View{
 
         public MyAdapter(Context context,JSONArray jsonArray) {
             this.context = context;
-            this.jsonArray = new JSONArray();
-            for (int i = 0; i < 9 ;i++){
-                this.jsonArray.put(new JSONObject());
-            }
+            this.jsonArray = jsonArray;
         }
 
         @Override
@@ -166,12 +200,20 @@ public class RewardReadView extends View{
                 holder = (RewardReadView.MyAdapter.ViewHolder) convertView.getTag();
             }
 
-            XImageUtil.getInstance().loadImage(holder.image,"http://image1.nphoto.net/news/image/201006/d129390b9b21135f.jpg");
+            try {
+                XImageUtil.getInstance().loadImage(holder.image, WangTuUtil.getPage(jsonArray.optJSONObject(position).optString("filePath")));
+            }catch (Exception e){
+
+            }
             return convertView;
         }
 
         private class ViewHolder {
             public ImageView image;
         }
+    }
+
+    public void showPhone(){
+        rewardPhoneRelative.setVisibility(View.VISIBLE);
     }
 }

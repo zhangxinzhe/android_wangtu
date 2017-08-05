@@ -8,6 +8,7 @@ package net.wangtu.android.util.album;
 public class ImageItem {
 	private String imageId;
 	private String imagePath;
+	private boolean isLocal = true;
 
 	public String getImageId() {
 		return imageId;
@@ -23,5 +24,13 @@ public class ImageItem {
 
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
+	}
+
+	public boolean getIsLocal() {
+		return isLocal;
+	}
+
+	public void setIsLocal(boolean isLocal) {
+		this.isLocal = isLocal;
 	}
 }

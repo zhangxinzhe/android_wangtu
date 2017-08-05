@@ -19,8 +19,10 @@ import net.wangtu.android.common.compoment.getui.GeTuiIntentService;
 import net.wangtu.android.common.compoment.getui.GeTuiService;
 import net.wangtu.android.fragment.HomeFragment;
 import net.wangtu.android.fragment.SearchFragment;
+import net.wangtu.android.util.ToastUtil;
 import net.wangtu.android.view.RewardCreateView;
 import net.wangtu.android.view.RewardEditView;
+import net.wangtu.android.util.LoginUtil;
 
 /**
  * Created by zhangxz on 2017/7/3.
@@ -155,9 +157,15 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
         }
     }
 
-    public void modifyAvatarOnClick(View view){
-        Intent intent = new Intent(this,AvatarActivity.class);
-        startActivity(intent);
+    public void userInfoOnClick(View view){
+        if(!LoginUtil.isLogin()){
+            ToastUtil.login(this);
+        }else{
+            Intent intent = new Intent(this,UserInfoActivity.class);
+            intent.putExtra("userId",LoginUtil.userId);
+            startActivity(intent);
+        }
+
         if (drawerLayout.isDrawerOpen(leftbar)) {
             drawerLayout.closeDrawer(leftbar);
         }

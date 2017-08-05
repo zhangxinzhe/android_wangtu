@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import net.wangtu.android.activity.HomeActivity;
 import net.wangtu.android.activity.LoginActivity;
+import net.wangtu.android.activity.UserInfoActivity;
 
 /**
  * Created by zhangxz on 2017/7/2.
@@ -17,8 +18,15 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        Intent intent = new Intent(this,LoginActivity.class);
-        startActivity(intent);
+        if(1==1){
+            Intent intent = new Intent(this,HomeActivity.class);
+            startActivity(intent);
+//            Intent intent = new Intent(this,UserInfoActivity.class);
+//            startActivity(intent);
+        }else{
+            Intent intent = new Intent(this,LoginActivity.class);
+            startActivity(intent);
+        }
         finish();
     }
 }

@@ -1,8 +1,6 @@
 package net.wangtu.android.fragment;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -11,9 +9,6 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.PopupWindow;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 import net.wangtu.android.R;
 import net.wangtu.android.activity.RewardDetailActivity;
@@ -124,7 +119,7 @@ public class SearchFragment extends BaseFragment {
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
-                convertView = View.inflate(getContext(), R.layout.home_fragment_search_item, null);
+                convertView = View.inflate(getContext(), R.layout.home_fragment_item, null);
             } else {
                 //itemView = (CourseListViewItemEvent) convertView;
             }

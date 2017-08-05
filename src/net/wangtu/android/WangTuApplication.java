@@ -11,6 +11,7 @@ import net.wangtu.android.activity.LoginActivity;
 import net.wangtu.android.activity.MyNoticeActivity;
 import net.wangtu.android.common.compoment.getui.GeTuiIntentService;
 import net.wangtu.android.common.compoment.getui.GeTuiService;
+import net.wangtu.android.util.ContextUtil;
 
 import org.xutils.x;
 
@@ -18,7 +19,7 @@ import org.xutils.x;
  * Created by zhangxz on 2017/7/2.
  */
 
-public class WangTuApplication extends Application {
+public class WangTuApplication extends ContextUtil {
     private static DemoHandler handler;
     /**
      * 应用未启动, 个推 service已经被唤醒,保存在该时间段内离线消息(此时 GetuiSdkDemoActivity.tLogView == null)
@@ -39,6 +40,8 @@ public class WangTuApplication extends Application {
         if (handler == null) {
             handler = new DemoHandler();
         }
+
+        ContextUtil.register(this);
     }
 
     public static void sendMessage(Message msg) {
