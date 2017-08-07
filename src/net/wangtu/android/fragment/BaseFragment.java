@@ -9,12 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import net.wangtu.android.R;
 import net.wangtu.android.activity.HomeActivity;
 import net.wangtu.android.common.statusbar.SystemStatusManager;
+import net.wangtu.android.common.util.ImageCacheUtil;
 import net.wangtu.android.common.util.Util;
+import net.wangtu.android.util.LoginUtil;
+import net.wangtu.android.util.album.XImageUtil;
 
 /**
  * Created by zhangxz on 2017/7/4.
@@ -32,8 +36,10 @@ public class BaseFragment extends Fragment {
         View headerView = childView.findViewById(R.id.header_container);
         if(headerView != null){
             leftBarBtn = headerView.findViewById(R.id.header_back);
-            leftBarBtn.setOnClickListener((HomeActivity)getContext());
+            ImageView imageView =  (ImageView)headerView.findViewById(R.id.header_back);
+            ImageCacheUtil.lazyLoad(imageView,LoginUtil.getAvatarFile(),R.drawable.icon_header,false);
         }
+
         //childView.setPadding(0, Util.getStatusHeight(getContext()), 0, 0);
         return childView;
     }

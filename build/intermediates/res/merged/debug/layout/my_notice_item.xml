@@ -9,12 +9,14 @@
     android:paddingTop="5dp"
     android:paddingBottom="2dp">
     <TextView
+        android:id="@+id/item_content"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:text="你没理解LZ的意思，他想要获得是上一层的view，就好比你建了个layout，然后addChild了个button，然后怎么从button这里获得他的父viewgroup（view貌似不能addChild吧），即layout的view对象"
         android:textColor="@color/gray_dack"
         android:textSize="14sp" />
     <TextView
+        android:id="@+id/item_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2011-7-12 17:38"

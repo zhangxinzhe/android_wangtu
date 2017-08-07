@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:2:1-278:12
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:2:1-284:12
 	package
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:3:5-33
 		INJECTED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml
@@ -120,7 +120,7 @@ ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:35:2-38:1
 	android:name
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:36:3-66
 application
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:41:5-276:19
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:41:5-282:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\zhangxz\.android\build-cache\f0041f16295e0599c6c722bfce5ef4fec71ab447\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\zhangxz\.android\build-cache\e5742e3670dda0967c828436823ca940b02befd6\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\zhangxz\.android\build-cache\33fd152ca15092f2fc93c9f4335ca986a486ae7a\output\AndroidManifest.xml:26:5-20
@@ -167,195 +167,193 @@ ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:58:3-62:1
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:61:4-36
 	android:name
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:59:4-60
-activity#net.wangtu.android.activity.RegisterActivity
+activity#net.wangtu.android.activity.UserInfoEditActivity
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:64:3-68:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:66:4-40
 	android:label
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:67:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:65:4-63
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:65:4-67
+activity#net.wangtu.android.activity.RegisterActivity
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:70:3-74:14
+	android:screenOrientation
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:72:4-40
+	android:label
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:73:4-36
+	android:name
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:71:4-63
 activity#net.wangtu.android.activity.UserInfoActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:69:3-73:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:75:3-79:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:71:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:77:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:72:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:78:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:70:4-63
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:76:4-63
 activity#net.wangtu.android.activity.HomeActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:75:3-81:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:81:3-87:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:78:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:84:4-40
 	android:launchMode
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:80:4-35
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:86:4-35
 	android:configChanges
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:79:4-65
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:85:4-65
 	android:theme
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:77:4-51
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:83:4-51
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:76:4-59
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:82:4-59
 activity#net.wangtu.android.activity.RewardDetailActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:83:3-87:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:89:3-93:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:85:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:91:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:86:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:92:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:84:4-67
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:90:4-67
 activity#net.wangtu.android.activity.MyRewardDetailBiddingActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:88:3-92:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:94:3-98:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:90:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:96:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:91:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:97:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:89:4-76
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:95:4-76
 activity#net.wangtu.android.activity.MyTaskDetailBiddingActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:93:3-97:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:99:3-103:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:95:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:101:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:96:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:102:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:94:4-74
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:100:4-74
 activity#net.wangtu.android.activity.MyTaskDetailPayActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:98:3-102:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:104:3-108:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:100:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:106:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:101:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:107:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:99:4-70
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:105:4-70
 activity#net.wangtu.android.activity.MyTaskDetailProgressActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:103:3-107:14
-	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:105:4-40
-	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:106:4-36
-	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:104:4-75
-activity#net.wangtu.android.activity.MyTaskActivity
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:109:3-113:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:111:4-40
 	android:label
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:112:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:110:4-61
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:110:4-75
+activity#net.wangtu.android.activity.MyTaskActivity
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:115:3-119:14
+	android:screenOrientation
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:117:4-40
+	android:label
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:118:4-36
+	android:name
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:116:4-61
 activity#net.wangtu.android.activity.common.PhotoActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:116:3-120:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:122:3-126:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:118:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:124:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:119:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:125:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:117:4-67
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:123:4-67
 activity#net.wangtu.android.activity.common.AlbumActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:121:3-125:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:127:3-131:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:123:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:129:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:124:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:130:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:122:4-67
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:128:4-67
 activity#net.wangtu.android.activity.common.ClipImageActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:126:3-130:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:132:3-136:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:128:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:134:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:129:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:135:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:127:4-71
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:133:4-71
 activity#net.wangtu.android.activity.common.AvatarActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:131:3-135:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:137:3-141:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:133:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:139:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:134:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:140:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:132:4-68
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:138:4-68
 activity#net.wangtu.android.activity.RewardPayActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:137:3-142:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:143:3-148:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:140:4-40
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:146:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:141:4-36
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:147:4-36
 	android:launchMode
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:139:4-35
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:145:4-35
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:138:4-64
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:144:4-64
 activity#net.wangtu.android.activity.LiquidatedDamagesPayActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:144:3-149:14
-	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:147:4-40
-	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:148:4-36
-	android:launchMode
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:146:4-35
-	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:145:4-75
-activity#net.wangtu.android.activity.MyRewardDetailPayActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:151:3-155:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:150:3-155:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:153:4-40
 	android:label
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:154:4-36
+	android:launchMode
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:152:4-35
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:152:4-72
-activity#net.wangtu.android.activity.MyRewardDetailPublishActivity
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:151:4-75
+activity#net.wangtu.android.activity.MyRewardDetailPayActivity
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:157:3-161:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:159:4-40
 	android:label
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:160:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:158:4-76
-activity#net.wangtu.android.activity.MyRewardDetailResultActivity
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:158:4-72
+activity#net.wangtu.android.activity.MyRewardDetailPublishActivity
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:163:3-167:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:165:4-40
 	android:label
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:166:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:164:4-75
-activity#net.wangtu.android.activity.SettingActivity
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:164:4-76
+activity#net.wangtu.android.activity.MyRewardDetailResultActivity
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:169:3-173:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:171:4-40
 	android:label
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:172:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:170:4-62
-activity#net.wangtu.android.activity.MyNoticeActivity
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:170:4-75
+activity#net.wangtu.android.activity.SettingActivity
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:175:3-179:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:177:4-40
 	android:label
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:178:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:176:4-63
-activity#net.wangtu.android.wxapi.WXPayEntryActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:181:3-186:14
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:176:4-62
+activity#net.wangtu.android.activity.MyNoticeActivity
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:181:3-185:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:183:4-40
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:185:4-36
-	android:launchMode
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:184:4-34
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:184:4-36
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:182:4-44
-activity#com.alipay.sdk.app.H5PayActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:189:3-194:14
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:182:4-63
+activity#net.wangtu.android.wxapi.WXPayEntryActivity
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:187:3-192:14
 	android:screenOrientation
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:193:4-38
-	android:exported
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:192:4-28
-	android:configChanges
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:191:4-65
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:189:4-40
+	android:label
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:191:4-36
+	android:launchMode
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:190:4-34
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:190:4-51
-activity#com.alipay.sdk.auth.AuthActivity
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:188:4-44
+activity#com.alipay.sdk.app.H5PayActivity
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:195:3-200:14
 	android:screenOrientation
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:199:4-38
@@ -365,138 +363,148 @@ ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:195:3-200
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:197:4-65
 	android:name
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:196:4-51
-service#net.wangtu.android.common.compoment.getui.GeTuiService
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:204:3-209:13
-	android:process
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:208:4-34
-	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:207:4-31
+activity#com.alipay.sdk.auth.AuthActivity
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:201:3-206:14
+	android:screenOrientation
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:205:4-38
 	android:exported
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:206:4-27
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:204:4-28
+	android:configChanges
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:203:4-65
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:205:4-73
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:202:4-51
+service#net.wangtu.android.common.compoment.getui.GeTuiService
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:210:3-215:13
+	android:process
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:214:4-34
+	android:label
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:213:4-31
+	android:exported
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:212:4-27
+	android:name
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:211:4-73
 service#net.wangtu.android.common.compoment.getui.GeTuiIntentService
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:210:3-89
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:216:3-89
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:210:12-87
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:216:12-87
 meta-data#PUSH_APPID
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:213:3-215:45
-	android:value
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:215:4-42
-	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:214:4-29
-meta-data#PUSH_APPKEY
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:216:3-218:45
-	android:value
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:218:4-42
-	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:217:4-30
-meta-data#PUSH_APPSECRET
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:219:3-221:45
 	android:value
 		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:221:4-42
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:220:4-33
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:220:4-29
+meta-data#PUSH_APPKEY
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:222:3-224:45
+	android:value
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:224:4-42
+	android:name
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:223:4-30
+meta-data#PUSH_APPSECRET
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:225:3-227:45
+	android:value
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:227:4-42
+	android:name
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:226:4-33
 service#com.igexin.sdk.PushService
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:223:3-231:13
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:229:3-237:13
 	android:process
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:227:4-34
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:233:4-34
 	android:label
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:226:4-38
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:232:4-38
 	android:exported
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:225:4-27
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:231:4-27
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:224:4-45
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:230:4-45
 intent-filter#com.igexin.sdk.action.service.message
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:228:4-230:20
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:234:4-236:20
 action#com.igexin.sdk.action.service.message
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:229:5-67
-	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:229:13-65
-receiver#com.igexin.sdk.PushReceiver
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:233:3-244:14
-	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:233:13-55
-intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED+android.intent.action.MEDIA_MOUNTED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.igexin.sdk.action.refreshls
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:234:4-243:20
-action#android.intent.action.BOOT_COMPLETED
 ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:235:5-67
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:235:13-64
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:235:13-65
+receiver#com.igexin.sdk.PushReceiver
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:239:3-250:14
+	android:name
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:239:13-55
+intent-filter#android.intent.action.ACTION_POWER_CONNECTED+android.intent.action.ACTION_POWER_DISCONNECTED+android.intent.action.BOOT_COMPLETED+android.intent.action.MEDIA_MOUNTED+android.intent.action.USER_PRESENT+android.net.conn.CONNECTIVITY_CHANGE+com.igexin.sdk.action.refreshls
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:240:4-249:20
+action#android.intent.action.BOOT_COMPLETED
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:241:5-67
+	android:name
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:241:13-64
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:236:5-67
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:242:5-67
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:236:13-64
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:242:13-64
 action#android.intent.action.USER_PRESENT
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:237:5-65
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:243:5-65
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:237:13-62
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:243:13-62
 action#com.igexin.sdk.action.refreshls
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:238:5-62
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:244:5-62
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:238:13-59
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:244:13-59
 action#android.intent.action.MEDIA_MOUNTED
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:240:5-66
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:246:5-66
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:240:13-63
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:246:13-63
 action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:241:5-75
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:247:5-75
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:241:13-72
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:247:13-72
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:242:5-78
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:248:5-78
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:242:13-75
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:248:13-75
 activity#com.igexin.sdk.PushActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:245:3-251:66
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:251:3-257:66
 	android:process
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:249:4-34
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:255:4-34
 	android:excludeFromRecents
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:247:4-37
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:253:4-37
 	android:exported
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:248:4-28
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:254:4-28
 	android:theme
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:251:4-63
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:257:4-63
 	android:taskAffinity
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:250:4-58
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:256:4-58
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:246:4-46
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:252:4-46
 activity#com.igexin.sdk.GActivity
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:252:3-258:66
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:258:3-264:66
 	android:process
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:256:4-34
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:262:4-34
 	android:excludeFromRecents
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:254:4-37
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:260:4-37
 	android:exported
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:255:4-27
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:261:4-27
 	android:theme
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:258:4-63
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:264:4-63
 	android:taskAffinity
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:257:4-58
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:263:4-58
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:253:4-43
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:259:4-43
 service#com.igexin.download.DownloadService
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:261:3-263:37
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:267:3-269:37
 	android:process
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:263:4-34
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:269:4-34
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:262:4-54
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:268:4-54
 receiver#com.igexin.download.DownloadReceiver
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:264:3-268:14
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:270:3-274:14
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:264:13-64
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:270:13-64
 intent-filter#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:265:4-267:20
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:271:4-273:20
 provider#com.igexin.download.DownloadProvider
-ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:269:3-273:37
+ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:275:3-279:37
 	android:authorities
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:271:4-54
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:277:4-54
 	android:process
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:273:4-34
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:279:4-34
 	android:exported
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:272:4-27
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:278:4-27
 	android:name
-		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:270:4-55
+		ADDED from E:\GitHub\android_studio\android_wangtu\AndroidManifest.xml:276:4-55
 meta-data#android.support.VERSION
 ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\zhangxz\.android\build-cache\f0041f16295e0599c6c722bfce5ef4fec71ab447\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\zhangxz\.android\build-cache\e5742e3670dda0967c828436823ca940b02befd6\output\AndroidManifest.xml:22:5-24:34

@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="b74042feb278d67a756615f667593a877a947830">
+        sha1="e5f0dd0acd51383374982c505320813bb43dabe6">
         <dex dex="E:\GitHub\android_studio\android_wangtu\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_30b35ffcb38a5b98916cc07921e4de3e2179004f\classes.dex" />
     </item>
     <item

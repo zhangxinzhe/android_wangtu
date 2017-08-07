@@ -84,7 +84,7 @@ public class WangTuHttpUtil {
 		if(json != null){
 			if(json.optBoolean("isNeedUpdateAppVersion")){
 				TaskUtil.hasInit = false;
-				TaskUtil.startAync(context);
+				TaskUtil.startAync();
 			}
 		}
 		return json;

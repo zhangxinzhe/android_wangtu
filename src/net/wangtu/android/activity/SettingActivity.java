@@ -9,6 +9,7 @@ import net.wangtu.android.Constants;
 import net.wangtu.android.R;
 import net.wangtu.android.activity.base.BaseActivity;
 import net.wangtu.android.common.util.ThreadUtils;
+import net.wangtu.android.util.LoginUtil;
 import net.wangtu.android.util.WangTuHttpUtil;
 import net.wangtu.android.util.WangTuUtil;
 
@@ -42,6 +43,7 @@ public class SettingActivity extends BaseActivity {
                             public void run() {
                                 stopLoading();
                                 if("success".equals(dataJson.optString("msg"))){
+                                    LoginUtil.logout();
                                     Intent intent = new Intent(SettingActivity.this,LoginActivity.class);
                                     startActivity(intent);
                                     finish();;

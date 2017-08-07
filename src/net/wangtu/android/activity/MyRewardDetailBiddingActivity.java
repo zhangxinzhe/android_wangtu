@@ -141,6 +141,7 @@ public class MyRewardDetailBiddingActivity extends BaseActivity{
                     post(new Runnable() {
                         @Override
                         public void run() {
+                            ToastUtil.stopLoading(MyRewardDetailBiddingActivity.this);
                             if("success".equals(dataJson.optString("msg"))){
                                 ToastUtil.alert(MyRewardDetailBiddingActivity.this, "操作成功！", new ToastUtil.DialogOnClickListener() {
                                     @Override

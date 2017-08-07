@@ -126,7 +126,18 @@ public class UserInfoActivity extends BaseActivity {
     }
 
     public void modifyAvatarOnClick(View view){
+        JSONObject userInfo = null;
+        if(dataJson == null || (userInfo = dataJson.optJSONObject("userInfo")) == null){
+            return;
+        }
         Intent intent = new Intent(this,AvatarActivity.class);
+        intent.putExtra("avatarFile",WangTuUtil.getPage(userInfo.optString("avatarFile")));
+        startActivity(intent);
+    }
+
+    public void modifyUserInfoOnClick(View view){
+        Intent intent = new Intent(this,UserInfoEditActivity.class);
+        //intent.putExtra("avatarFile",WangTuUtil.getPage(userInfo.optString("avatarFile")));
         startActivity(intent);
     }
 }

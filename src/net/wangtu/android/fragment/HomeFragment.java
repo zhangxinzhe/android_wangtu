@@ -214,6 +214,10 @@ public class HomeFragment extends BaseFragment {
                                     }
                                 }
                             }
+
+                            if(rewardArray == null || rewardArray.length() <= 0){
+                                refreshView.showSpecialViewResource(R.layout.common_empty,null);
+                            }
                             searchAdapter.notifyDataSetChanged();
                         }
                     });

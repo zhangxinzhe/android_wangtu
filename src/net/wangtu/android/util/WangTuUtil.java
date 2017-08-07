@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.widget.Toast;
 
+import net.wangtu.android.Constants;
 import net.wangtu.android.common.util.UrlUtil;
 
 /**
@@ -37,7 +38,7 @@ public class WangTuUtil {
 	 * @return
 	 */
 	public static String getConfigUrl(){
-		return "";
+		return getPage(Constants.API_MOBILE_CONFIG);
 	}
 
 	/**

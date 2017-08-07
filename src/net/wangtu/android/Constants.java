@@ -14,8 +14,13 @@ public class Constants {
     public static final String API_LOGOUT = "/appUser/logout.htm";//退出
     public static final String API_REGISTER = "/appUser/userRegister.htm";//注册页
     public static final String API_GET_USER_INFO = "/appUser/getUserInfo.htm";//个人信息
+    public static final String API_CHANGE_AVATAR = "/appUser/changeAvatar.htm";//个人信息
+    public static final String API_UPDATE_USER_INFO = "/appUser/updateUserInfo.htm";//更新个人信息
     public static final String API_USER_COMMENTS = "/appUser/getUserComments.htm";//评论信息
     public static final String API_REPLY_COMMENT = "/appUser/replyComment.htm";//回复评论
+
+    public static final String API_MOBILE_CONFIG = "/appSms/mobileConfig.htm";//配置信息
+    public static final String API_PUSH_MSG_LIST = "/appSms/pushMsgList.htm";//消息列表
 
     public static final String API_LIST_REWARD = "/appReward/listReward.htm";//悬赏列表
     public static final String API_REWARD_DETAIL = "/appReward/rewardDetail.htm";//悬赏详情

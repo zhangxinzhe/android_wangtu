@@ -1,5 +1,6 @@
 package net.wangtu.android.view;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.AttributeSet;
@@ -55,7 +56,7 @@ public class UserInfoCommentItemView extends LinearLayout{
     private TextView serviceAttitudeTxt;
     private UserInfoStarView serviceQuality;
     private TextView serviceQualityTxt;
-    private EditText textReply;
+    private TextView textReply;
     private LinearLayout linearLayoutReply;
     private HorizontalListView photoView;
 
@@ -85,7 +86,7 @@ public class UserInfoCommentItemView extends LinearLayout{
         serviceAttitudeTxt = (TextView)findViewById(R.id.item_service_attitude_txt);
         serviceQuality = (UserInfoStarView)findViewById(R.id.item_service_quality);
         serviceQualityTxt = (TextView)findViewById(R.id.item_service_quality_txt);
-        textReply = (EditText) findViewById(R.id.item_text_reply);
+        textReply = (TextView) findViewById(R.id.item_text_reply);
         linearLayoutReply = (LinearLayout) findViewById(R.id.item_linearLayout_reply);
         photoView = (HorizontalListView) findViewById(R.id.item_photos);
 
@@ -93,44 +94,21 @@ public class UserInfoCommentItemView extends LinearLayout{
         btnReply.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String reply = textReply.getText().toString();
-                if(ValidateUtil.isBlank(reply)){
-                    ToastUtil.error(getContext(),"请填写回复内容！");
-                    return;
-                }
-                ToastUtil.startLoading(getContext());
-                ThreadUtils.schedule(new Runnable() {
+                ViewGroup container = (ViewGroup)((Activity)getContext()).findViewById(android.R.id.content);
+                UserInfoCommentReplyView replyView = new UserInfoCommentReplyView(container);
+                replyView.initData(commentId);
+                replyView.setCloseListner(new Runnable() {
                     @Override
                     public void run() {
-                        try {
-                            String url = WangTuUtil.getPage(Constants.API_REPLY_COMMENT);
-                            url += "?commentId=" + commentId;
-                            url += "&replyContent=" + URLEncoder.encode(reply,"utf-8");
-                            final JSONObject dataJson = WangTuHttpUtil.getJson(url,getContext());
-                            if(dataJson != null){
-                                btnReply.post(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        ToastUtil.stopLoading(getContext());
-                                        if("success".equals(dataJson.optString("msg"))){
-                                            userInfoCommentView.refreshData();
-                                        }else{
-                                            ToastUtil.error(getContext(),dataJson.optString("msg"));
-                                        }
-                                    }
-                                });
+                        userInfoCommentView.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                userInfoCommentView.refreshData();
                             }
-                        } catch (Exception e) {
-                            btnReply.post(new Runnable() {
-                                @Override
-                                public void run() {
-                                    ToastUtil.stopLoading(getContext());
-                                    ToastUtil.error(getContext(),"提交失败");
-                                }
-                            });
-                        }
+                        });
                     }
                 });
+                replyView.show();
             }
         });
     }

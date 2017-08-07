@@ -184,6 +184,9 @@ public class MyTaskView extends RefreshView{
                                     }
                                 }
                             }
+                            if(datas == null || datas.length() <= 0){
+                                showSpecialViewResource(R.layout.common_empty,null);
+                            }
                             adapter.notifyDataSetChanged();
                         }
                     });

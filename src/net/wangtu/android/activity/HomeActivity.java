@@ -7,8 +7,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.View;
 import android.view.ViewStub;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TabHost;
+import android.widget.TextView;
 
 import com.igexin.sdk.PushManager;
 
@@ -17,9 +19,11 @@ import net.wangtu.android.activity.base.BaseFragmentActivity;
 import net.wangtu.android.activity.common.AvatarActivity;
 import net.wangtu.android.common.compoment.getui.GeTuiIntentService;
 import net.wangtu.android.common.compoment.getui.GeTuiService;
+import net.wangtu.android.common.util.ImageCacheUtil;
 import net.wangtu.android.fragment.HomeFragment;
 import net.wangtu.android.fragment.SearchFragment;
 import net.wangtu.android.util.ToastUtil;
+import net.wangtu.android.util.album.XImageUtil;
 import net.wangtu.android.view.RewardCreateView;
 import net.wangtu.android.view.RewardEditView;
 import net.wangtu.android.util.LoginUtil;
@@ -28,7 +32,7 @@ import net.wangtu.android.util.LoginUtil;
  * Created by zhangxz on 2017/7/3.
  */
 
-public class HomeActivity extends BaseFragmentActivity implements View.OnClickListener{
+public class HomeActivity extends BaseFragmentActivity{
     private static final String FRAGMENT_TAG_PREFIX = "Fragment_";// 前缀
 
     private FragmentTabHost tabHost;
@@ -57,6 +61,12 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
     @Override
     protected void onResume() {
         super.onResume();
+
+        ImageView imageView =  (ImageView)leftbar.findViewById(R.id.leftbar_header_img);
+        ImageCacheUtil.lazyLoad(imageView,LoginUtil.getAvatarFile(),R.drawable.icon_header,false);
+
+        TextView realName =  (TextView)leftbar.findViewById(R.id.leftbar_real_name);
+        realName.setText(LoginUtil.getRealName());
     }
 
     /**
@@ -101,6 +111,10 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
         mainTabBtns[1].setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(!LoginUtil.isLogin()){
+                    ToastUtil.login(HomeActivity.this);
+                    return;
+                }
                 if(rewardPublishView == null){
                     rewardPublishView = (RewardCreateView)((ViewStub)findViewById(R.id.rewardPublishStub)).inflate();
                 }
@@ -141,7 +155,12 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
         tabHost.setCurrentTab(currentTab);
     }
 
-    public void onClick(View v){
+    public void openLeftBarOnClick(View view){
+        if(!LoginUtil.isLogin()){
+            ToastUtil.login(this);
+            return;
+        }
+
         if (drawerLayout.isDrawerOpen(leftbar)) {
             drawerLayout.closeDrawer(leftbar);
         }else{
@@ -150,8 +169,28 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
     }
 
     public void myTaskOnClick(View view){
-        Intent intent = new Intent(this,MyTaskActivity.class);
-        startActivity(intent);
+        if(!LoginUtil.isLogin()){
+            ToastUtil.login(HomeActivity.this);
+        }else{
+            Intent intent = new Intent(this,MyTaskActivity.class);
+            intent.putExtra("tab","myTask");
+            startActivity(intent);
+        }
+
+        if (drawerLayout.isDrawerOpen(leftbar)) {
+            drawerLayout.closeDrawer(leftbar);
+        }
+    }
+
+    public void myRewardOnClick(View view){
+        if(!LoginUtil.isLogin()){
+            ToastUtil.login(HomeActivity.this);
+        }else{
+            Intent intent = new Intent(this,MyTaskActivity.class);
+            intent.putExtra("type","myReward");
+            startActivity(intent);
+        }
+
         if (drawerLayout.isDrawerOpen(leftbar)) {
             drawerLayout.closeDrawer(leftbar);
         }
@@ -162,7 +201,7 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
             ToastUtil.login(this);
         }else{
             Intent intent = new Intent(this,UserInfoActivity.class);
-            intent.putExtra("userId",LoginUtil.userId);
+            intent.putExtra("userId",LoginUtil.getUserId());
             startActivity(intent);
         }
 
@@ -177,6 +216,10 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
     }
 
     public void settingOnClick(View view){
+        if(!LoginUtil.isLogin()){
+            ToastUtil.login(this);
+            return;
+        }
         Intent intent = new Intent(this,SettingActivity.class);
         startActivity(intent);
         if (drawerLayout.isDrawerOpen(leftbar)) {
@@ -185,6 +228,11 @@ public class HomeActivity extends BaseFragmentActivity implements View.OnClickLi
     }
 
     public void myNoticeOnClick(View view){
+        if(!LoginUtil.isLogin()){
+            ToastUtil.login(HomeActivity.this);
+            return;
+        }
+
         Intent intent = new Intent(this,MyNoticeActivity.class);
         startActivity(intent);
         if (drawerLayout.isDrawerOpen(leftbar)) {

@@ -16,19 +16,31 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import net.wangtu.android.Constants;
 import net.wangtu.android.R;
 import net.wangtu.android.activity.base.BaseActivity;
 import net.wangtu.android.common.util.FileUtil;
+import net.wangtu.android.common.util.JsonUtil;
 import net.wangtu.android.common.util.ValidateUtil;
 import net.wangtu.android.common.view.dialog.ActionSheet;
+import net.wangtu.android.common.view.dialog.BoxView;
+import net.wangtu.android.util.ToastUtil;
+import net.wangtu.android.util.WangTuUtil;
 import net.wangtu.android.util.album.AlbumHelper;
 import net.wangtu.android.util.album.AlbumOpt;
 import net.wangtu.android.util.album.ImageBucket;
 import net.wangtu.android.util.album.ImageItem;
 import net.wangtu.android.util.album.XImageUtil;
+import net.wangtu.android.util.xhttp.XHttpUtil;
 
+import org.json.JSONObject;
+
+import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 选择相册
@@ -41,6 +53,7 @@ public class AvatarActivity extends BaseActivity {
 	public static final int REQUEST_CLIP = 0x000003;
 
 	private ImageView mAvatar;
+	private String avatarFile;
 
 	@Override
 	protected void toCreate(Bundle savedInstanceState) {
@@ -48,15 +61,18 @@ public class AvatarActivity extends BaseActivity {
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 		setContentView(R.layout.avatar);
 		initHeader("头像修改",true);
+		Bundle bundle = getIntent().getExtras();
+		avatarFile = bundle.getString("avatarFile");
 		init();
 		initHeader();
 	}
 
 	public void init(){
 		mAvatar = (ImageView) findViewById(R.id.iv_avatar);
-
 		// 显示头像
-		XImageUtil.getInstance().loadImage(mAvatar, "http://avatar.csdn.net/C/B/1/1_kouwoo.jpg");
+		if(!ValidateUtil.isBlank(avatarFile)){
+			XImageUtil.getInstance().loadImage(mAvatar, avatarFile);
+		}
 		// 清除信息
 		AlbumOpt.selectImages.clear();
 	}
@@ -144,42 +160,47 @@ public class AvatarActivity extends BaseActivity {
 	 * @param clipPath
 	 */
 	public void editAvatar(String clipPath){
-//		if (ValidateUtil.isBlank(clipPath)) {
-//			ToastUtil.error(this, "图片不存在", null);
-//			return;
-//		}
-//
-//		String url = ZerobookUtil.getPage(ZerobookConstant.page_save_avatar);
-//		Map<String, List<File>> files = new HashMap<String, List<File>>();
-//		List<File> fileList = new ArrayList<File>();
-//		fileList.add(new File(clipPath));
-//		files.put("avater", fileList);
-//
-//		final ToastView loadingView = ToastUtil.loading(this, "正在上传");
-//
-//		XHttpUtil.getInstance().upLoadFile(this, url, null, files, new XCallBack() {
-//			@Override
-//			public void onSuccess(Object result) {
-//				loadingView.dismiss();
-//
-//				if ("SUCCESS".equals(result)) {
-//					ToastUtil.success(AvatarActivity.this, "修改成功", new DismissCallBack() {
-//						@Override
-//						public void callBack() {
-//							finish();
-//						}
-//					});
-//				} else {
-//					ToastUtil.error(AvatarActivity.this, (String) result, null);
-//				}
-//			}
-//
-//			@Override
-//			public void onError() {
-//				loadingView.dismiss();
-//				ToastUtil.error(AvatarActivity.this, "修改失败", null);
-//			}
-//		});
+		if (ValidateUtil.isBlank(clipPath)) {
+			ToastUtil.error(this, "图片不存在");
+			return;
+		}
+
+		XImageUtil.getInstance().loadImage(mAvatar, clipPath);
+
+		String url = WangTuUtil.getPage(Constants.API_CHANGE_AVATAR);
+		Map<String, List<File>> files = new HashMap<String, List<File>>();
+		List<File> fileList = new ArrayList<File>();
+		fileList.add(new File(clipPath));
+		files.put("avatar", fileList);
+
+		ToastUtil.startLoading(this);
+		XHttpUtil.getInstance().upLoadFile(url, null, files, new XHttpUtil.XCallBack() {
+			@Override
+			public void onSuccess(Object result) {
+				ToastUtil.stopLoading(AvatarActivity.this);
+				try {
+					JSONObject dataJson = JsonUtil.parseJson((String) result);
+					if ("success".equals(dataJson.optString("msg"))) {
+						ToastUtil.alert(AvatarActivity.this, "头像修改成功！", new ToastUtil.DialogOnClickListener() {
+							@Override
+							public void onClick(BoxView dialog) {
+								finish();
+							}
+						});
+					} else {
+						ToastUtil.error(AvatarActivity.this, dataJson.optString("msg"));
+					}
+				}catch (Exception e){
+					ToastUtil.error(AvatarActivity.this, e.getMessage());
+				}
+			}
+
+			@Override
+			public void onError() {
+				ToastUtil.stopLoading(AvatarActivity.this);
+				ToastUtil.error(AvatarActivity.this, "修改失败");
+			}
+		});
 	}
 
 	@Override

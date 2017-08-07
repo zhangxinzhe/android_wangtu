@@ -139,13 +139,13 @@
             android:paddingTop="1dp"
             android:src="@drawable/icon_user_info_arrow_up"
             />
-        <EditText
+        <TextView
             android:id="@+id/item_text_reply"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="20dp"
             android:layout_marginTop="5dp"
-            android:textSize="11dp"
+            android:textSize="11sp"
             android:padding="0dp"
             android:hint="回复内容"
             android:background="@color/white"

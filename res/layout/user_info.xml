@@ -245,43 +245,6 @@
         </LinearLayout >
     </ScrollView>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/gray_vv_light"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:visibility="gone"
-        android:orientation="vertical">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="50dp"
-            android:hint="回复内容"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:gravity="top|left"
-            android:background="@drawable/common_border_gray"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="发表"
-            android:layout_gravity="right"
-            android:layout_marginTop="10dp"
-            android:paddingBottom="2dp"
-            android:paddingTop="2dp"
-            android:paddingRight="8dp"
-            android:paddingLeft="8dp"
-            android:textColor="@color/white"
-            android:background="@color/blue"
-            />
-    </LinearLayout>
-    <LinearLayout
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -289,6 +252,7 @@
         android:paddingRight="20dp"
         android:orientation="horizontal"
         android:weightSum="4"
+        android:visibility="visible"
         android:gravity="center_vertical|right"
         android:background="@color/gray_vv_light">
         <Button
@@ -305,6 +269,7 @@
             android:textSize="16sp"
             android:layout_weight="2"
             android:background="@drawable/common_corner_blue"
+            android:onClick="modifyUserInfoOnClick"
             />
     </LinearLayout>
 </RelativeLayout>

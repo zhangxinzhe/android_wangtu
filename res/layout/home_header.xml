@@ -4,7 +4,7 @@
     android:layout_height="@dimen/home_header_height"
     android:background="@drawable/home_header_background">
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/home_header_height"
         android:layout_alignParentTop="true"
         android:background="@drawable/home_header_background">
@@ -16,6 +16,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="15dp"
+            android:onClick="openLeftBarOnClick"
             android:src="@drawable/icon_header" />
 
         <TextView

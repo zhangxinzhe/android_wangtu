@@ -24,9 +24,10 @@
             android:src="@drawable/icon_header" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/leftbar_real_name"
+            android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="小姐不可以.."
+            android:text="*"
             android:textSize="35sp"
             android:layout_marginLeft="80dp"
             android:textColor="@color/white"
@@ -45,7 +46,6 @@
             android:onClick="myTaskOnClick"
             android:layout_height="50dp">
             <ImageView
-                android:id="@+id/leftbar_avatar"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:src="@drawable/icon_leftbar_1"
@@ -55,6 +55,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="我的任务"
+                style="@style/home_leftbar_text"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:onClick="myRewardOnClick"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_leftbar_1"
+                style="@style/home_leftbar_img"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="我的悬赏"
                 style="@style/home_leftbar_text"
                 />
         </RelativeLayout>

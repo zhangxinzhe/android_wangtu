@@ -295,11 +295,7 @@ public class RewardEditView extends LinearLayout{
         txtRewardLocation.setText(dataJson.optString("location"));
         Date deadline = new Date(dataJson.optLong("deadline"));
         txtRewardDeadline.setText(dateFormat.format(deadline));
-        String description = dataJson.optString("description");
-        if(description.length() > 8){
-            description = description.substring(0,8) + "......";
-        }
-        txtRewardDescription.setText(description);
+        txtRewardDescription.setText(dataJson.optString("description"));
         txtRewardPrice.setText(dataJson.optString("price"));
 
         //图片展示

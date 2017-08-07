@@ -28,6 +28,7 @@ import net.wangtu.android.activity.base.BaseActivity;
 import net.wangtu.android.activity.base.BaseFragmentActivity;
 import net.wangtu.android.activity.common.AlbumActivity;
 import net.wangtu.android.common.util.FileUtil;
+import net.wangtu.android.common.util.ImageCacheUtil;
 import net.wangtu.android.common.util.JsonUtil;
 import net.wangtu.android.common.util.ThreadUtils;
 import net.wangtu.android.common.util.Util;
@@ -36,6 +37,7 @@ import net.wangtu.android.common.view.HorizontalListView;
 import net.wangtu.android.common.view.dialog.ActionSheet;
 import net.wangtu.android.common.view.dialog.ConfirmView;
 import net.wangtu.android.util.HeaderUtil;
+import net.wangtu.android.util.LoginUtil;
 import net.wangtu.android.util.ToastUtil;
 import net.wangtu.android.util.WangTuHttpUtil;
 import net.wangtu.android.util.WangTuUtil;
@@ -99,6 +101,13 @@ public class RewardCreateView extends RelativeLayout implements View.OnClickList
             rewardEditView.clearReward();
         } catch (JSONException e) {
             e.printStackTrace();
+        }
+
+        //设置padding
+        View headerView = findViewById(R.id.header_container);
+        if(headerView != null){
+            ImageView imageView =  (ImageView)headerView.findViewById(R.id.header_back);
+            ImageCacheUtil.lazyLoad(imageView,LoginUtil.getAvatarFile(),R.drawable.icon_header,false);
         }
     }
 

@@ -13,6 +13,7 @@ import net.wangtu.android.common.util.StringUtil;
 import net.wangtu.android.common.util.ThreadUtils;
 import net.wangtu.android.common.util.ValidateUtil;
 import net.wangtu.android.common.view.dialog.AlertView;
+import net.wangtu.android.util.LoginUtil;
 import net.wangtu.android.util.ToastUtil;
 import net.wangtu.android.util.WangTuHttpUtil;
 import net.wangtu.android.util.WangTuUtil;
@@ -61,6 +62,7 @@ public class LoginActivity extends BaseActivity {
                             public void run() {
                                 stopLoading();
                                 if("success".equals(dataJson.optString("msg"))){
+                                    LoginUtil.login(dataJson);
                                     Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
                                     startActivity(intent);
                                     finish();;

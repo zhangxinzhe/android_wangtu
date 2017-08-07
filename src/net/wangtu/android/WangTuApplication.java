@@ -12,13 +12,13 @@ import net.wangtu.android.activity.MyNoticeActivity;
 import net.wangtu.android.common.compoment.getui.GeTuiIntentService;
 import net.wangtu.android.common.compoment.getui.GeTuiService;
 import net.wangtu.android.util.ContextUtil;
+import net.wangtu.android.util.TaskUtil;
 
 import org.xutils.x;
 
 /**
  * Created by zhangxz on 2017/7/2.
  */
-
 public class WangTuApplication extends ContextUtil {
     private static DemoHandler handler;
     /**
@@ -29,6 +29,10 @@ public class WangTuApplication extends ContextUtil {
     @Override
     public void onCreate() {
         super.onCreate();
+        ContextUtil.register(this);
+
+        TaskUtil.startAync();
+
         // 初始化
         x.Ext.init(this);
         // 设置是否输出Debug
@@ -40,8 +44,6 @@ public class WangTuApplication extends ContextUtil {
         if (handler == null) {
             handler = new DemoHandler();
         }
-
-        ContextUtil.register(this);
     }
 
     public static void sendMessage(Message msg) {
@@ -56,13 +58,18 @@ public class WangTuApplication extends ContextUtil {
     public class DemoHandler extends Handler {
         @Override
         public void handleMessage(Message msg) {
+            Intent intent = null;
             switch (msg.what) {
                 case 0:
+                    intent = new Intent(WangTuApplication.this,MyNoticeActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent);
                     break;
                 case 1:
                     break;
                 default:
-                    Intent intent = new Intent(WangTuApplication.this,MyNoticeActivity.class);
+                    intent = new Intent(WangTuApplication.this,MyNoticeActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
             }
         }

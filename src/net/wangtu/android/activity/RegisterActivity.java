@@ -114,16 +114,12 @@ public class RegisterActivity extends BaseActivity {
                         @Override
                         public void run() {
                             stopLoading();
-                            Toast.makeText(getApplicationContext(),"登录失败",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(),"提交失败",Toast.LENGTH_SHORT).show();
                         }
                     });
                 }
             }
         });
-
-
-        Intent intent = new Intent(this,HomeActivity.class);
-        startActivity(intent);
     }
 
     public void cancel(View view){

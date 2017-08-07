@@ -60,6 +60,12 @@
 			android:screenOrientation="portrait"
 			android:label="@string/app_name" >
 		</activity>
+		<!--修改页-->
+		<activity
+			android:name="net.wangtu.android.activity.UserInfoEditActivity"
+			android:screenOrientation="portrait"
+			android:label="@string/app_name" >
+		</activity>
 		<!--注册页-->
 		<activity
 			android:name="net.wangtu.android.activity.RegisterActivity"

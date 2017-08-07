@@ -101,6 +101,7 @@ public class ToastUtil {
             public void onClick(BoxView dialog) {
                 Intent intent = new Intent(context, LoginActivity.class);
                 context.startActivity(intent);
+                dialog.dismiss();
             }
         }, null);
     }
