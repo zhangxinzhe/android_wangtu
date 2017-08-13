@@ -1,4 +1,4 @@
-#Mon Aug 07 23:55:32 CST 2017
+#Tue Aug 08 00:22:10 CST 2017
 base.0=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1
 renamed.0=classes.dex
 file.0=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1\\classes.dex

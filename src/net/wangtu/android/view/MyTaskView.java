@@ -12,12 +12,8 @@ import android.widget.ListView;
 
 import net.wangtu.android.Constants;
 import net.wangtu.android.R;
-import net.wangtu.android.activity.LiquidatedDamagesPayActivity;
-import net.wangtu.android.activity.MyRewardDetailBiddingActivity;
-import net.wangtu.android.activity.MyRewardDetailPublishActivity;
-import net.wangtu.android.activity.MyRewardDetailResultActivity;
+import net.wangtu.android.activity.PlatPayActivity;
 import net.wangtu.android.activity.MyTaskDetailBiddingActivity;
-import net.wangtu.android.activity.MyTaskDetailPayActivity;
 import net.wangtu.android.activity.MyTaskDetailProgressActivity;
 import net.wangtu.android.common.util.ThreadUtils;
 import net.wangtu.android.common.view.dialog.BoxView;
@@ -116,7 +112,7 @@ public class MyTaskView extends RefreshView{
                     ToastUtil.confirm(getContext(),"提示", "支付完平台使用费，才能开始竞价！","支付","取消", new ToastUtil.DialogOnClickListener() {
                         @Override
                         public void onClick(BoxView dialog) {
-                            Intent intent = new Intent(getContext(),LiquidatedDamagesPayActivity.class);
+                            Intent intent = new Intent(getContext(),PlatPayActivity.class);
                             intent.putExtra("rewardId",rewardId);
                             getContext().startActivity(intent);
                         }

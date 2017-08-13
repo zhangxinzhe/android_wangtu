@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import net.wangtu.android.activity.HomeActivity;
 import net.wangtu.android.activity.LoginActivity;
+import net.wangtu.android.activity.TaskCommentActivity;
 import net.wangtu.android.activity.UserInfoActivity;
 
 /**
@@ -19,6 +20,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
 
         if(1==1){
+//            Intent intent = new Intent(this,TaskCommentActivity.class);
+//            startActivity(intent);
             Intent intent = new Intent(this,HomeActivity.class);
             startActivity(intent);
 //            Intent intent = new Intent(this,UserInfoActivity.class);

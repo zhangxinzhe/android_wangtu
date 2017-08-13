@@ -20,12 +20,12 @@
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
-        "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_screen_content_include.xml"
-    },
-    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_screen_content_include.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\my_reward_detail_bidding.xml",
@@ -76,40 +76,44 @@
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\my_reward_detail_bidding_item.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_alert_view.xml",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\common_alert_view.xml"
-    },
-    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
-        "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_select_dialog_material.xml"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_alert_view.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\common_alert_view.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\getui_notification.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\getui_notification.xml"
     },
     {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_select_popup_window.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\common_select_popup_window.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\task_comment.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\task_comment.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_camera_album.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\common_camera_album.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
-        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\login.xml"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
-        "source": "C:\\Users\\zhangxz\\.android\\build-cache\\f0041f16295e0599c6c722bfce5ef4fec71ab447\\output\\res\\layout\\abc_action_bar_up_container.xml"
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\login.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\login.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\common_clip_image.xml",
@@ -282,6 +286,10 @@
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\reward_pay.xml",
         "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\reward_pay.xml"
+    },
+    {
+        "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\home_fragment_search_item.xml",
+        "source": "E:\\GitHub\\android_studio\\android_wangtu\\res\\layout\\home_fragment_search_item.xml"
     },
     {
         "merged": "E:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\res\\merged\\debug\\layout\\register.xml",

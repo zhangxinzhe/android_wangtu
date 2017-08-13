@@ -53,6 +53,23 @@ public class ValidateUtil {
 
 		return false;
 	}
+
+	/**
+	 * Object[]是否为空
+	 * @param collection
+	 * @return
+	 */
+	public static boolean isEmpty(Object[] array){
+		if(array == null){
+			return true;
+		}
+
+		if(array.length <= 0){
+			return true;
+		}
+
+		return false;
+	}
 	
 	/**
 	 * JsonArray是否为空

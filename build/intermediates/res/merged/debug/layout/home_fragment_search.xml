@@ -24,7 +24,7 @@
             android:paddingRight="5dp" >
 
             <EditText
-                android:id="@+id/et_search_name"
+                android:id="@+id/search_content"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -51,7 +51,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_search"
+            android:id="@+id/search_btn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -61,11 +61,49 @@
             android:textColor="@color/gray_light"
             android:textSize="16sp" />
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/history_list_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="124dp"
+        android:orientation="vertical"
+        android:background="@color/green">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="历史搜索"
+            android:textColor="#777"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6" />
+
+        <ListView
+            android:id="@+id/history_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:divider="#e6e6e6"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e6e6e6" />
+    </LinearLayout>
     <net.wangtu.android.common.view.refresh.RefreshView
         android:id="@+id/refreshView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="124dp"
+        android:visibility="gone"
         >
         <ListView
             android:id="@+id/listView"

@@ -5,10 +5,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Toast;
 
-import net.wangtu.android.activity.HomeActivity;
-import net.wangtu.android.activity.LiquidatedDamagesPayActivity;
 import net.wangtu.android.activity.LoginActivity;
-import net.wangtu.android.activity.MyTaskActivity;
 import net.wangtu.android.common.view.dialog.AlertView;
 import net.wangtu.android.common.view.dialog.BoxView;
 import net.wangtu.android.common.view.dialog.ConfirmView;

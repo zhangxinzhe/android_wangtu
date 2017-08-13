@@ -1,29 +1,22 @@
 package net.wangtu.android.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import net.wangtu.android.Constants;
 import net.wangtu.android.R;
 import net.wangtu.android.activity.base.BaseActivity;
 import net.wangtu.android.common.util.ThreadUtils;
-import net.wangtu.android.common.util.UrlUtil;
 import net.wangtu.android.common.util.ValidateUtil;
 import net.wangtu.android.common.view.dialog.BoxView;
 import net.wangtu.android.common.view.dialog.ConfirmView;
-import net.wangtu.android.fragment.HomeFragment;
 import net.wangtu.android.util.ToastUtil;
 import net.wangtu.android.util.WangTuHttpUtil;
 import net.wangtu.android.util.WangTuUtil;
 import net.wangtu.android.view.RewardReadView;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 /**
@@ -118,8 +111,12 @@ public class RewardDetailActivity extends BaseActivity{
                                     @Override
                                     public void onClick(BoxView dialog) {
                                         //跳去支付平台使用费
-                                        Intent intent = new Intent(RewardDetailActivity.this,LiquidatedDamagesPayActivity.class);
+                                        Intent intent = new Intent(RewardDetailActivity.this,PlatPayActivity.class);
                                         intent.putExtra("rewardId",rewardId);
+                                        intent.putExtra("rewardPrice",dataJson.optString("rewardPrice"));
+                                        intent.putExtra("platPrice",dataJson.optString("platPrice"));
+                                        intent.putExtra("userBalance",dataJson.optString("userBalance"));
+                                        intent.putExtra("platPercent",dataJson.optString("platPercent"));
                                         startActivity(intent);
                                         finish();
                                     }

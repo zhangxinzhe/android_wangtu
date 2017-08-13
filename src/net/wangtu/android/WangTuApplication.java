@@ -11,6 +11,7 @@ import net.wangtu.android.activity.LoginActivity;
 import net.wangtu.android.activity.MyNoticeActivity;
 import net.wangtu.android.common.compoment.getui.GeTuiIntentService;
 import net.wangtu.android.common.compoment.getui.GeTuiService;
+import net.wangtu.android.db.base.DBHelper;
 import net.wangtu.android.util.ContextUtil;
 import net.wangtu.android.util.TaskUtil;
 
@@ -32,6 +33,9 @@ public class WangTuApplication extends ContextUtil {
         ContextUtil.register(this);
 
         TaskUtil.startAync();
+
+        //初始化数据库
+        DBHelper.init(3, "wangtu.db", this);
 
         // 初始化
         x.Ext.init(this);

@@ -5,6 +5,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 import net.wangtu.android.Constants;
+import net.wangtu.android.common.util.JsonUtil;
 import net.wangtu.android.common.util.ThreadUtils;
 import net.wangtu.android.common.util.http.HttpUtil;
 import net.wangtu.android.util.WangTuHttpUtil;
@@ -29,10 +30,10 @@ public class WechatPayUtil {
     /**
      * 支付
      * @param activity
-     * @param url
+     * @param payContent
      * @param callBack
      */
-    public static void pay(final Activity activity, final String url,WechatPayCallBack callBack){
+    public static void pay(final Activity activity, final String payContent,WechatPayCallBack callBack){
         callBackWeakReference = new WeakReference<WechatPayCallBack>(callBack);
         final IWXAPI api = WXAPIFactory.createWXAPI(activity, Constants.APP_ID);
         api.registerApp(Constants.APP_ID);
@@ -40,7 +41,7 @@ public class WechatPayUtil {
             @Override
             public void run() {
                 try{
-                    JSONObject json = WangTuHttpUtil.getJson(url,activity);
+                    JSONObject json = JsonUtil.parseJson(payContent);
                     //JSONObject json = createTestParams();
                     if (json != null) {
                         if(null != json && !json.has("retcode") ){

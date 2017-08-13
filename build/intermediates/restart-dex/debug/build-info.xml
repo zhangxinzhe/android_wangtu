@@ -6,25 +6,34 @@
     density="xhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1502121325655"
+    timestamp="1502122902275"
     token="-1018671258541485330"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="893" />
+        duration="1858" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="14" />
+        duration="76" />
     <task
         name="verifier"
-        duration="43" />
+        duration="16" />
 
     <artifact
+        location="E:\GitHub\android_studio\android_wangtu\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\GitHub\android_studio\android_wangtu\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
         location="E:\GitHub\android_studio\android_wangtu\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="E:\GitHub\android_studio\android_wangtu\build\intermediates\split-apk\debug\slices\slice_9.apk"
         type="SPLIT" />
     <artifact
         location="E:\GitHub\android_studio\android_wangtu\build\outputs\apk\android_wangtu-debug.apk"
@@ -73,10 +82,19 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1502121325655"
+        timestamp="1502122902275"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
+            location="E:\GitHub\android_studio\android_wangtu\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\GitHub\android_studio\android_wangtu\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="E:\GitHub\android_studio\android_wangtu\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="E:\GitHub\android_studio\android_wangtu\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
             location="E:\GitHub\android_studio\android_wangtu\build\outputs\apk\android_wangtu-debug.apk"

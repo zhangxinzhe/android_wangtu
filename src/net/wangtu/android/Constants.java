@@ -19,6 +19,9 @@ public class Constants {
     public static final String API_USER_COMMENTS = "/appUser/getUserComments.htm";//评论信息
     public static final String API_REPLY_COMMENT = "/appUser/replyComment.htm";//回复评论
 
+    public static final String API_ACCOUNT = "/appUser/account.htm";//用户余额
+    public static final String API_ACCOUNT_APPLY = "/appUser/accountApply.htm";//用户提现
+
     public static final String API_MOBILE_CONFIG = "/appSms/mobileConfig.htm";//配置信息
     public static final String API_PUSH_MSG_LIST = "/appSms/pushMsgList.htm";//消息列表
 
@@ -34,12 +37,17 @@ public class Constants {
     public static final String API_DELETE_REWARD = "/appReward/deleteReward.htm";//删除悬赏
     public static final String API_CHOOSE_BIDDING = "/appReward/chooseBidding.htm";//选择接单人
     public static final String API_REWARD_FINISH = "/appReward/rewardFinish.htm";//任务完成
+    public static final String API_GET_COMMENT_USER_INFO = "/appUser/getCommentUserInfo.htm";//获取评论用户信息
+    public static final String API_ADD_COMMENT = "/appUser/addComment.htm";//添加评论
+
 
 
     //接单者
     public static final String API_MY_TASK = "/appReward/myRewardBidding.htm";//我的任务
     public static final String API_BIDDING_DETAIL = "/appReward/biddingDetail.htm";//竞价详情
     public static final String API_ADD_REWARD_BIDDING = "/appReward/addRewardBidding.htm";//创建竞价
+    public static final String API_CREATE_BIDDING_ORDER = "/appReward/createBiddingOrder.htm";//支付平台使用费
+    public static final String API_FINISH_BIDDING_ORDER = "/appReward/finishBiddingOrder.htm";//支付平台使用费结果
     public static final String API_CANCEL_BIDDING = "/appReward/cancelBidding.htm";//取消竞价
 
 

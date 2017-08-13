@@ -3,8 +3,6 @@ package net.wangtu.android.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import net.wangtu.android.R;
 import net.wangtu.android.activity.base.BaseActivity;
@@ -32,7 +30,7 @@ public class MyTaskDetailPayActivity extends BaseActivity{
             @Override
             public void onClick(View v){
                 confirmView.dismiss();
-                Intent intent = new Intent(MyTaskDetailPayActivity.this,LiquidatedDamagesPayActivity.class);
+                Intent intent = new Intent(MyTaskDetailPayActivity.this,PlatPayActivity.class);
                 startActivity(intent);
             }
         });

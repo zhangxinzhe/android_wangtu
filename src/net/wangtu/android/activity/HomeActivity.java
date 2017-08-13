@@ -22,6 +22,7 @@ import net.wangtu.android.common.compoment.getui.GeTuiService;
 import net.wangtu.android.common.util.ImageCacheUtil;
 import net.wangtu.android.fragment.HomeFragment;
 import net.wangtu.android.fragment.SearchFragment;
+import net.wangtu.android.util.BalanceUtil;
 import net.wangtu.android.util.ToastUtil;
 import net.wangtu.android.util.album.XImageUtil;
 import net.wangtu.android.view.RewardCreateView;
@@ -41,6 +42,8 @@ public class HomeActivity extends BaseFragmentActivity{
     private RewardCreateView rewardPublishView;
     private View[] mainTabBtns;
     private int currentTab = -1;// 当前tab所在下标索引
+    private View balanceContainer;
+    private TextView balanceTxt;
 
     @Override
     protected void toCreate(Bundle savedInstanceState) {
@@ -67,6 +70,26 @@ public class HomeActivity extends BaseFragmentActivity{
 
         TextView realName =  (TextView)leftbar.findViewById(R.id.leftbar_real_name);
         realName.setText(LoginUtil.getRealName());
+
+        //余额显示控制
+        BalanceUtil.initBalance(this, new Runnable() {
+            @Override
+            public void run() {
+                if(balanceContainer == null){
+                    balanceContainer = leftbar.findViewById(R.id.balance_container);
+                }
+                if(balanceTxt == null){
+                    balanceTxt = (TextView)balanceContainer.findViewById(R.id.txt_balance);
+                }
+
+                if(BalanceUtil.getBalance() < 0){
+                    balanceContainer.setVisibility(View.GONE);
+                }else{
+                    balanceContainer.setVisibility(View.VISIBLE);
+                    balanceTxt.setText("￥" + BalanceUtil.getBalance());
+                }
+            }
+        });
     }
 
     /**

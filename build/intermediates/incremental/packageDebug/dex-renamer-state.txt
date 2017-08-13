@@ -1,7 +1,4 @@
-#Mon Aug 07 23:54:13 CST 2017
-base.0=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_340d2fbf0d086abd83ad9117841150327dcbcf1e
-renamed.1=classes2.dex
+#Thu Aug 10 00:08:32 CST 2017
+base.0=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.1=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_30b35ffcb38a5b98916cc07921e4de3e2179004f\\classes.dex
-base.1=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_30b35ffcb38a5b98916cc07921e4de3e2179004f
-file.0=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_340d2fbf0d086abd83ad9117841150327dcbcf1e\\classes.dex
+file.0=E\:\\GitHub\\android_studio\\android_wangtu\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

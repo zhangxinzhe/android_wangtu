@@ -138,6 +138,9 @@ public class MyRewardDetailResultActivity extends BaseActivity{
                                             ToastUtil.alert(MyRewardDetailResultActivity.this, "操作成功！", new ToastUtil.DialogOnClickListener() {
                                                 @Override
                                                 public void onClick(BoxView dialog) {
+                                                    Intent intent = new Intent(MyRewardDetailResultActivity.this,TaskCommentActivity.class);
+                                                    intent.putExtra("rewardId",rewardId);
+                                                    startActivity(intent);
                                                     finish();
                                                 }
                                             });

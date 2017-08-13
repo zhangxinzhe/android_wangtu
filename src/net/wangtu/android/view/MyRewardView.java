@@ -13,7 +13,6 @@ import android.widget.ListView;
 import net.wangtu.android.Constants;
 import net.wangtu.android.R;
 import net.wangtu.android.activity.MyRewardDetailBiddingActivity;
-import net.wangtu.android.activity.MyRewardDetailPayActivity;
 import net.wangtu.android.activity.MyRewardDetailPublishActivity;
 import net.wangtu.android.activity.MyRewardDetailResultActivity;
 import net.wangtu.android.common.util.ThreadUtils;
